@@ -1,0 +1,149 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Pp n="LanguageProperties">
+      <Vv>
+        <El n="Code" t="0" v="ru-RU" />
+        <El n="DisplayName" t="0" v="Russian (Russia)" />
+        <El n="EnglishName" t="0" v="Russian (Russia)" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/File">
+      <Vv>
+        <El n="New..." t="0" v="Создать..." />
+        <El n="Open..." t="0" v="Открыть..." />
+        <El n="Save" t="0" v="Сохранить" />
+        <El n="Save As..." t="0" v="Сохранить как..." />
+        <El n="Close" t="0" v="Закрыть" />
+        <El n="Recent Projects" t="0" v="Недавний Проект" />
+        <El n="Exit" t="0" v="Выход" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/Project">
+      <Vv>
+        <El n="Build" t="0" v="Собрать" />
+        <El n="Check Version..." t="0" v="Проверить версию..." />
+      </Vv>
+    </Pp>
+    <Pp n="Menu">
+      <Vv>
+        <El n="View" t="0" v="Вид" />
+        <El n="File" t="0" v="Файл" />
+        <El n="Help" t="0" v="Помощь" />
+        <El n="Project" t="0" v="Проект" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/Help">
+      <Vv>
+        <El n="Check for Updates" t="0" v="Проверить обновление" />
+        <El n="About LiteUpdate Delevop" t="0" v="О программе..." />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/View">
+      <Vv>
+        <El n="Project Explorer" t="0" v="Обозреватель проекта" />
+        <El n="Output" t="0" v="Вывод" />
+        <El n="Error List" t="0" v="Ошибки" />
+        <El n="Start Page" t="0" v="Главная" />
+      </Vv>
+    </Pp>
+    <Pp n="ErrorList">
+      <Vv>
+        <El n="Error List" t="0" v="Ошибки" />
+        <El n="NN" t="0" v="№" />
+        <El n="Description" t="0" v="Описание" />
+      </Vv>
+    </Pp>
+    <Pp n="ProjectWindow">
+      <Vv>
+        <El n="Project '{0}'" t="0" v="Проект '{0}'" />
+        <El n="Properties" t="0" v="Свойства" />
+        <El n="File System" t="0" v="Файловая система" />
+        <El n="Versions" t="0" v="Версии" />
+        <El n="Version {0}" t="0" v="Версия {0}" />
+        <El n="Files Modify" t="0" v="Измененные файлы" />
+        <El n="User Info" t="0" v="Информация пользователя" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/FileSystem">
+      <Vv>
+        <El n="Name" t="0" v="Имя" />
+        <El n="Type" t="0" v="Тип" />
+        <El n="Version" t="0" v="Версия" />
+        <El n="Modify" t="0" v="Модификация" />
+        <El n="Delete" t="0" v="Удалить" />
+        <El n="Add Special Folder" t="0" v="Добавить специальную директорию" />
+        <El n="File System" t="0" v="Файловая система" />
+        <El n="File System on Target Machine" t="0" v="File System on Target Machine" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/Properties">
+      <Vv>
+        <El n="Properties" t="0" v="Свойства" />
+        <El n="Project Name" t="0" v="Имя проекта" />
+        <El n="Application" t="0" v="Приложение" />
+        <El n="Root Directory" t="0" v="Корневая директория" />
+        <El n="Update Directory" t="0" v="Директория обновлений" />
+      </Vv>
+    </Pp>
+    <Pp n="Button">
+      <Vv>
+        <El n="Browse..." t="0" v="Обзор..." />
+        <El n="Cancel" t="0" v="Cancel" />
+        <El n="OK" t="0" v="OK" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/VFM">
+      <Vv>
+        <El n="File" t="0" v="Файл" />
+        <El n="Updates" t="0" v="Обновленные" />
+        <El n="Add" t="0" v="Добавленные" />
+        <El n="Remove" t="0" v="Удаленные" />
+      </Vv>
+    </Pp>
+    <Pp n="CheckVersion">
+      <Vv>
+        <El n="Version {0}" t="0" v="Версия {0}" />
+        <El n="LblChanges" t="0" v="Изменения в файловой системе" />
+        <El n="LblToApply" t="0" v="Применить изменения для новой версии?" />
+        <El n="Create New" t="0" v="Создать новую" />
+        <El n="Apply Current" t="0" v="Применить к текущей" />
+      </Vv>
+    </Pp>
+    <Pp n="StartPage">
+      <Vv>
+        <El n="Start Page" t="0" v="Главная" />
+      </Vv>
+    </Pp>
+    <Pp n="Output">
+      <Vv>
+        <El n="Output" t="0" v="Вывод" />
+      </Vv>
+    </Pp>
+    <Pp n="About">
+      <Vv>
+        <El n="Version {0}" t="0" v="Версия {0}" />
+        <El n="About {0}" t="0" v="О программе {0}" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/FileSystem/CM">
+      <Vv>
+        <El n="Delete" t="0" v="Delete" />
+        <El n="Add" t="0" v="Add" />
+        <El n="Folder" t="0" v="Folder" />
+        <El n="File..." t="0" v="File..." />
+        <El n="Rename" t="0" v="Rename" />
+      </Vv>
+    </Pp>
+    <Pp n="NewProject">
+      <Vv>
+        <El n="New Project" t="0" v="New Project" />
+        <El n="Name:" t="0" v="Name:" />
+        <El n="Location:" t="0" v="Location:" />
+        <El n="Application:" t="0" v="Application:" />
+      </Vv>
+    </Pp>
+  </Pp>
+</PropertiesService>

@@ -1,0 +1,39 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <El index="1" t="System.String[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <El index="2" t="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <El index="3" t="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Vv>
+      <El n="Language" t="0" v="en-US" />
+    </Vv>
+    <Pp n="RecentProject">
+      <Vv>
+        <El n="Files" t="1">
+          <Ar v="C:\Documents and Settings\Александр К\Мои документы\Gordago LiteUpdate Develop\Projects\LUProject1\LUProject1.luprj" />
+        </El>
+      </Vv>
+    </Pp>
+    <Pp n="Updates">
+      <Vv>
+        <El n="Auto" t="2" v="True" />
+      </Vv>
+      <Pp n="Proxy">
+        <Vv>
+          <El n="Enable" t="2" v="False" />
+          <El n="Server" t="0" v="" />
+          <El n="Port" t="3" v="0" />
+          <El n="UserName" t="0" v="" />
+          <El n="UserPassword" t="0" v="" />
+        </Vv>
+      </Pp>
+    </Pp>
+    <Pp n="Project">
+      <Vv>
+        <El n="Directory" t="0" v="F:\Мои документы\Gordago LiteUpdate Develop\Projects\Gordago.LiteUpdate.Develop" />
+      </Vv>
+    </Pp>
+  </Pp>
+</PropertiesService>
