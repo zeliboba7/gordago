@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gordago.AppStructureEditor", "Gordago.AppStructureEditor.csproj", "{8D28B159-24BC-4CF7-A0F1-DFBEA29F6111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gordago.Core", "..\Gordago.Core\Gordago.Core.csproj", "{89F29EE1-0512-41E6-A11D-4AB90ED741C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D28B159-24BC-4CF7-A0F1-DFBEA29F6111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D28B159-24BC-4CF7-A0F1-DFBEA29F6111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D28B159-24BC-4CF7-A0F1-DFBEA29F6111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D28B159-24BC-4CF7-A0F1-DFBEA29F6111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F29EE1-0512-41E6-A11D-4AB90ED741C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F29EE1-0512-41E6-A11D-4AB90ED741C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F29EE1-0512-41E6-A11D-4AB90ED741C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F29EE1-0512-41E6-A11D-4AB90ED741C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
