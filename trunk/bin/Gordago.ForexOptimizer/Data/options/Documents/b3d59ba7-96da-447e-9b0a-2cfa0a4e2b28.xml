@@ -1,0 +1,11 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Vv>
+      <El n="GUID" t="0" v="b3d59ba7-96da-447e-9b0a-2cfa0a4e2b28" />
+      <El n="Symbol" t="0" v="EURUSD" />
+    </Vv>
+  </Pp>
+</PropertiesService>

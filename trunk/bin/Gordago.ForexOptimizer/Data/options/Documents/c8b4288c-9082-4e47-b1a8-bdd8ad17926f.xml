@@ -1,0 +1,11 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Vv>
+      <El n="GUID" t="0" v="c8b4288c-9082-4e47-b1a8-bdd8ad17926f" />
+      <El n="CodeFile" t="0" v="C:\work\gordago\bin\Gordago.ForexOptimizer\Instruments\Indicators\my.cs" />
+    </Vv>
+  </Pp>
+</PropertiesService>
