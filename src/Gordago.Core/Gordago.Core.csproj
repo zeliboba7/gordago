@@ -1,0 +1,67 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89F29EE1-0512-41E6-A11D-4AB90ED741C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gordago.Core</RootNamespace>
+    <AssemblyName>Gordago.Core</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Gordago.Core\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Gordago.Core\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppStructure.cs" />
+    <Compile Include="FileKey.cs" />
+    <Compile Include="FileUtility.cs" />
+    <Compile Include="Language\LanguageFile.cs" />
+    <Compile Include="Language\LanguageInfo.cs" />
+    <Compile Include="Language\LanguageManager.cs" />
+    <Compile Include="Language\LanguageMenuManager.cs" />
+    <Compile Include="Output\OutputTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Output\OutputWriter.cs" />
+    <Compile Include="ProcessEventHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyService\EasyProperties.cs" />
+    <Compile Include="PropertyService\EasyPropertiesNode.cs" />
+    <Compile Include="PropertyService\PropertyChangedEventHandler.cs" />
+    <Compile Include="RecentFiles\RecentFilesManager.cs" />
+    <Compile Include="Sessions\ISession.cs" />
+    <Compile Include="Sessions\SessionDest.cs" />
+    <Compile Include="Sessions\SessionSource.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
