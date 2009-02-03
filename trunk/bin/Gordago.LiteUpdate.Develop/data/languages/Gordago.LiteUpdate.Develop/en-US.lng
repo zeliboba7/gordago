@@ -1,0 +1,148 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Pp n="LanguageProperties">
+      <Vv>
+        <El n="Code" t="0" v="en-US" />
+        <El n="DisplayName" t="0" v="English (United States)" />
+        <El n="EnglishName" t="0" v="English (United States)" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu">
+      <Vv>
+        <El n="File" t="0" v="File" />
+        <El n="Project" t="0" v="Project" />
+        <El n="View" t="0" v="View" />
+        <El n="Help" t="0" v="Help" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/File">
+      <Vv>
+        <El n="New..." t="0" v="New..." />
+        <El n="Open..." t="0" v="Open..." />
+        <El n="Save" t="0" v="Save" />
+        <El n="Save As..." t="0" v="Save As..." />
+        <El n="Close" t="0" v="Close" />
+        <El n="Recent Projects" t="0" v="Recent Projects" />
+        <El n="Exit" t="0" v="Exit" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/Project">
+      <Vv>
+        <El n="Check Version..." t="0" v="Check Version..." />
+        <El n="Build" t="0" v="Build" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/View">
+      <Vv>
+        <El n="Project Explorer" t="0" v="Project Explorer" />
+        <El n="Output" t="0" v="Output" />
+        <El n="Error List" t="0" v="Error List" />
+        <El n="Start Page" t="0" v="Start Page" />
+      </Vv>
+    </Pp>
+    <Pp n="Menu/Help">
+      <Vv>
+        <El n="Check for Updates" t="0" v="Check for Updates" />
+        <El n="About LiteUpdate Delevop" t="0" v="About LiteUpdate Delevop" />
+      </Vv>
+    </Pp>
+    <Pp n="ErrorList">
+      <Vv>
+        <El n="Error List" t="0" v="Error List" />
+        <El n="NN" t="0" v="NN" />
+        <El n="Description" t="0" v="Description" />
+      </Vv>
+    </Pp>
+    <Pp n="Output">
+      <Vv>
+        <El n="Output" t="0" v="Output" />
+      </Vv>
+    </Pp>
+    <Pp n="ProjectWindow">
+      <Vv>
+        <El n="Project '{0}'" t="0" v="Project '{0}'" />
+        <El n="Properties" t="0" v="Properties" />
+        <El n="File System" t="0" v="File System" />
+        <El n="Versions" t="0" v="Versions" />
+        <El n="Version {0}" t="0" v="Version {0}" />
+        <El n="Files Modify" t="0" v="Files Modify" />
+        <El n="User Info" t="0" v="User Info" />
+        <El n="Version Info" t="0" v="Version Info" />
+      </Vv>
+    </Pp>
+    <Pp n="StartPage">
+      <Vv>
+        <El n="Start Page" t="0" v="Start Page" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/FileSystem">
+      <Vv>
+        <El n="Name" t="0" v="Name" />
+        <El n="Type" t="0" v="Type" />
+        <El n="Version" t="0" v="Version" />
+        <El n="Modify" t="0" v="Modify" />
+        <El n="File System" t="0" v="File System" />
+        <El n="File System on Target Machine" t="0" v="File System on Target Machine" />
+      </Vv>
+    </Pp>
+    <Pp n="NewProject">
+      <Vv>
+        <El n="New Project" t="0" v="New Project" />
+        <El n="Name:" t="0" v="Name:" />
+        <El n="Location:" t="0" v="Location:" />
+        <El n="Application:" t="0" v="Application:" />
+      </Vv>
+    </Pp>
+    <Pp n="Button">
+      <Vv>
+        <El n="Browse..." t="0" v="Browse..." />
+        <El n="OK" t="0" v="OK" />
+        <El n="Cancel" t="0" v="Cancel" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/FileSystem/CM">
+      <Vv>
+        <El n="Delete" t="0" v="Delete" />
+        <El n="Add" t="0" v="Add" />
+        <El n="Folder" t="0" v="Folder" />
+        <El n="File..." t="0" v="File..." />
+        <El n="Rename" t="0" v="Rename" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/Properties">
+      <Vv>
+        <El n="Properties" t="0" v="Properties" />
+        <El n="Project Name" t="0" v="Project Name" />
+        <El n="Application" t="0" v="Application" />
+        <El n="Root Directory" t="0" v="Root Directory" />
+        <El n="Update Directory" t="0" v="Update Directory" />
+      </Vv>
+    </Pp>
+    <Pp n="Project/VFM">
+      <Vv>
+        <El n="File" t="0" v="File" />
+        <El n="Updates" t="0" v="Updates" />
+        <El n="Add" t="0" v="Add" />
+        <El n="Remove" t="0" v="Remove" />
+      </Vv>
+    </Pp>
+    <Pp n="CheckVersion">
+      <Vv>
+        <El n="Version {0}" t="0" v="Version {0}" />
+        <El n="LblChanges" t="0" v="Changes in file system." />
+        <El n="LblToApply" t="0" v="To apply these changes for the new version?" />
+        <El n="Create New" t="0" v="Create New" />
+        <El n="Apply Current" t="0" v="Apply Current" />
+      </Vv>
+    </Pp>
+    <Pp n="About">
+      <Vv>
+        <El n="Version {0}" t="0" v="Version {0}" />
+        <El n="About {0}" t="0" v="About {0}" />
+      </Vv>
+    </Pp>
+  </Pp>
+</PropertiesService>

@@ -1,0 +1,4 @@
+Format=1.0,ProductVersion=1
++,[Application]\Gordago.LiteUpdate.DLL,1,18009,53248
++,[Application]\WindowsApplication1.exe,1,5786,24576
++,[Application]\ICSharpCode.SharpZipLib.dll,1,72311,180224

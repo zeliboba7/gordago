@@ -1,0 +1,12 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Vv>
+      <El n="AppRootDirectory" t="0" v="..\" />
+      <El n="LanguagesDirectory" t="0" v="..\data\languages" />
+      <El n="OptionsDirectory" t="0" v="..\data\options" />
+    </Vv>
+  </Pp>
+</PropertiesService>
