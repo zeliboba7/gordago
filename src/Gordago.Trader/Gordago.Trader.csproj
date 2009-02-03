@@ -1,0 +1,179 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD547573-E7CC-4A4D-BAD5-6BEE88388AC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gordago.Trader</RootNamespace>
+    <AssemblyName>Gordago.Trader</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Gordago.Trader\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Gordago.Trader\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bar.cs" />
+    <Compile Include="Builder\ClassBuilder.cs" />
+    <Compile Include="Builder\ClassConstructor.cs" />
+    <Compile Include="Charting\Box\ChartBox.ChartAreaManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\Box\ChartBox.ChartBoxArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\Box\ChartBox.ChartHorizontalScale.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\Box\ChartBox.ChartVerticalScale.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\Box\ChartBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\Box\ChartBox.FigureCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\Box\ChartBoxEventArgs.cs" />
+    <Compile Include="Charting\ChartFigureStyle.cs" />
+    <Compile Include="Charting\ChartGraphics.cs" />
+    <Compile Include="Charting\ChartPaintEventArgs.cs" />
+    <Compile Include="Charting\ChartPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\ChartPanel.designer.cs">
+      <DependentUpon>ChartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charting\ChartPanelEventArgs.cs" />
+    <Compile Include="Charting\ChartPanelEventHandler.cs" />
+    <Compile Include="Charting\ChartVerticalScaleValue.cs" />
+    <Compile Include="Charting\ChartControl\ChartControl.ChartPanelCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\ChartControl\ChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\ChartControl\ChartControl.override.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\ChartControl\ChartControlAction.cs" />
+    <Compile Include="Charting\Figures\Figure.cs" />
+    <Compile Include="Charting\Figures\FigureBars.cs" />
+    <Compile Include="Charting\Figures\FigureBarsStyle.cs" />
+    <Compile Include="Charting\Figures\FigureEventArgs.cs" />
+    <Compile Include="Charting\Figures\FigureIndicator.cs" />
+    <Compile Include="Charting\Figures\FigureIndicator.FunctionView.cs" />
+    <Compile Include="Charting\Figures\FigureIndicator.IndicatorView.cs" />
+    <Compile Include="Charting\Style.cs" />
+    <Compile Include="Charting\StyleManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charting\StyleManager.Designer.cs">
+      <DependentUpon>StyleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ChartDraw.cs" />
+    <Compile Include="Common\FontInfo.cs" />
+    <Compile Include="Common\FontInfos.cs" />
+    <Compile Include="Common\GdiBrush.cs" />
+    <Compile Include="Common\GdiChartDraw.cs" />
+    <Compile Include="Common\GdiFont.cs" />
+    <Compile Include="Common\GdiFontInfo.cs" />
+    <Compile Include="Common\GdiFontInfos.cs" />
+    <Compile Include="Common\GdiFunction_old.cs" />
+    <Compile Include="Common\GdiPen.cs" />
+    <Compile Include="Common\IChartDraw.cs" />
+    <Compile Include="Common\TypeCollection.cs" />
+    <Compile Include="Common\Win32.cs" />
+    <Compile Include="Data\FileKey.cs" />
+    <Compile Include="Data\HistoryManager.cs" />
+    <Compile Include="Data\IBarsData.cs" />
+    <Compile Include="Data\IBarsDataCollection.cs" />
+    <Compile Include="Data\Internal\BarManager.cs" />
+    <Compile Include="Data\Internal\BarsFileData.cs" />
+    <Compile Include="Data\Internal\BarsFileDataCacher.cs" />
+    <Compile Include="Data\Internal\BarsFolder.cs" />
+    <Compile Include="Data\Internal\BarsManager.cs" />
+    <Compile Include="Data\Internal\FileReadWrite.cs" />
+    <Compile Include="Data\Internal\MapsFolder.cs" />
+    <Compile Include="Data\Internal\Symbol.cs" />
+    <Compile Include="Data\Internal\SymbolKey.cs" />
+    <Compile Include="Data\Internal\TicksCacher.cs" />
+    <Compile Include="Data\Internal\TicksFileData.cs" />
+    <Compile Include="Data\Internal\TicksFileMapData.cs" />
+    <Compile Include="Data\Internal\TicksFileMapDataCacher.cs" />
+    <Compile Include="Data\Internal\TicksManager.cs" />
+    <Compile Include="Data\Internal\TicksMapItem.cs" />
+    <Compile Include="Data\Internal\TicksMapManager.cs" />
+    <Compile Include="Data\ISymbol.cs" />
+    <Compile Include="Data\ITickCollection.cs" />
+    <Compile Include="Data\ITicksManager.cs" />
+    <Compile Include="Charting\ChartControlDesigner.cs" />
+    <Compile Include="Indicators\Attributes\FunctionAttribute.cs" />
+    <Compile Include="Indicators\Attributes\IndicatorScaleAttribute.cs" />
+    <Compile Include="Indicators\Attributes\InputAttribute.cs" />
+    <Compile Include="Indicators\Attributes\ParameterAttribute.cs" />
+    <Compile Include="Indicators\Attributes\ParameterFromAttribute.cs" />
+    <Compile Include="Indicators\Function.cs" />
+    <Compile Include="Indicators\FunctionStyle.cs" />
+    <Compile Include="Indicators\FxMAMethod.cs" />
+    <Compile Include="Indicators\iAcceleratorOscillator.cs" />
+    <Compile Include="Indicators\iADX.cs" />
+    <Compile Include="Indicators\iAO.cs" />
+    <Compile Include="Indicators\iBars.cs" />
+    <Compile Include="Indicators\iBollingerBands.cs" />
+    <Compile Include="Indicators\IFunction.cs" />
+    <Compile Include="Indicators\iMA.cs" />
+    <Compile Include="Indicators\iMACD.cs" />
+    <Compile Include="Indicators\Indicator.cs" />
+    <Compile Include="Indicators\iStandardDeviation.cs" />
+    <Compile Include="Indicators\iStochastic.cs" />
+    <Compile Include="Indicators\Providers\FunctionInfo.cs" />
+    <Compile Include="Indicators\Providers\FunctionInfoCollection.cs" />
+    <Compile Include="Indicators\Providers\IndFunctionInfo.cs" />
+    <Compile Include="Indicators\Providers\IndicatorInfo.cs" />
+    <Compile Include="Indicators\Providers\InstrumentBuilder.cs" />
+    <Compile Include="Indicators\Providers\Parameter.cs" />
+    <Compile Include="Indicators\Providers\ParameterBuilder.cs" />
+    <Compile Include="Indicators\Providers\ParameterCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tick.cs" />
+    <Compile Include="TimeFrame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gordago.Core\Gordago.Core.csproj">
+      <Project>{89F29EE1-0512-41E6-A11D-4AB90ED741C0}</Project>
+      <Name>Gordago.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
