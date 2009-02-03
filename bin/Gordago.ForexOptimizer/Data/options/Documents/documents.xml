@@ -1,0 +1,27 @@
+﻿<PropertiesService version="1.0">
+  <Types>
+    <El index="0" t="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </Types>
+  <Pp n="RootProperties">
+    <Pp n="95f4f864-a1f1-4a4d-82d2-f90f8b7cb320">
+      <Vv>
+        <El n="Type" t="0" v="Gordago.FO.Instruments.CodeEditorDocument" />
+      </Vv>
+    </Pp>
+    <Pp n="b3d59ba7-96da-447e-9b0a-2cfa0a4e2b28">
+      <Vv>
+        <El n="Type" t="0" v="Gordago.FO.Charting.ChartDocument" />
+      </Vv>
+    </Pp>
+    <Pp n="c8b4288c-9082-4e47-b1a8-bdd8ad17926f">
+      <Vv>
+        <El n="Type" t="0" v="Gordago.FO.Instruments.CodeEditorDocument" />
+      </Vv>
+    </Pp>
+    <Pp n="ea410dda-fa0c-45ed-9120-a1b4ef785741">
+      <Vv>
+        <El n="Type" t="0" v="Gordago.FO.Charting.ChartDocument" />
+      </Vv>
+    </Pp>
+  </Pp>
+</PropertiesService>
