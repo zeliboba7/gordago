@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Toolbox version="3.1.0" Type="Price">
+  <Indicator Name="Open" Icon="o.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Open" Type="Gordago.Analysis.Kernel.Open"></Function>
+  </Indicator> 
+  <Indicator Name="High" Icon="h.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="High" Type="Gordago.Analysis.Kernel.High" IsDrawChart="false"></Function>
+  </Indicator>  
+  <Indicator Name="Low" Icon="l.gif" DrawChart="Never">
+      <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Low" Type="Gordago.Analysis.Kernel.Low"></Function>
+  </Indicator>
+  <Indicator Name="Close" Icon="c.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Close" Type="Gordago.Analysis.Kernel.Close"></Function>
+  </Indicator>
+  <Indicator Name="Median (HL/2)" Icon="m.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Median (HL/2)" Type="Gordago.Analysis.Kernel.Median"></Function>
+  </Indicator>
+  <Indicator Name="Typical (HLC/3)" Icon="t.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Typical (HLC/3)" Type="Gordago.Analysis.Kernel.Typical"></Function>
+  </Indicator>
+  <Indicator Name="Weighted (HLCC/4)" Icon="w.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Weighted (HLCC/4)" Type="Gordago.Analysis.Kernel.Weighted"></Function>
+  </Indicator>
+  <Indicator Name="Volume" Icon="v.gif" DrawChart="Never">
+    <Parameter Name="Timeframe" Type="TimeFrame" Visible="Never">1</Parameter>
+    <Function Name="Volume" Type="Gordago.Analysis.Kernel.Volume"></Function>
+  </Indicator>
+  <Indicator Name="Number" Icon="n.gif" DrawChart="Never" UsingHShift="False">
+    <Parameter Name="Value" Type="Integer" Min="-1000000" Max="1000000" >0</Parameter>
+    <Function Name="Number" Type="Gordago.Analysis.Kernel.Number"></Function>
+  </Indicator>
+</Toolbox>

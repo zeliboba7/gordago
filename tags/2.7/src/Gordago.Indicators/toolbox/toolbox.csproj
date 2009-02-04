@@ -1,0 +1,296 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B907F4D-EAD5-4099-BCF6-F700F6707AED}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>toolbox</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Gordago.Toolbox</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <BaseIntermediateOutputPath>..\..\..\obj\indicators\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\bin\indicators\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\bin\indicators\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>None</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO|AnyCPU' ">
+    <OutputPath>..\..\..\bin\indicators\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>None</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO_DEBUG|AnyCPU' ">
+    <OutputPath>..\..\..\bin\indicators\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_c|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>C:\Program Files\Gordago\Forex Optimizer TT\indicators\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assembly.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iAcceleratorOscillator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iAccumulationDistribution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iADX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iAroonHorn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iASCTrend.cs" />
+    <Compile Include="iATR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iAwesomeOscillator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iBearsPower.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iBollingerBands.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iBullsPower.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iBWMFI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iCCI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iClose.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iCross.cs" />
+    <Compile Include="iCrossCustomDrawing.cs" />
+    <Compile Include="iDeMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iEnvelope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iFATL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iForceIndex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iFractals.cs" />
+    <Compile Include="iGatorOscillator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iIchimoku.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="iJMA.cs" />
+    <Compile Include="iJuice.cs" />
+    <Compile Include="iLaguerre.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iLinearRegression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iMACD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iMomentum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iMoneyFlowIndex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iMovingAverage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iMovingAverageOfOscillator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iOnBalanceVolume.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iParabolicSAR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iPeriodOfTime.cs" />
+    <Compile Include="iPoint.cs" />
+    <Compile Include="iRSI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iStandardDeviation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iStohastic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iT3_Trix.cs" />
+    <None Include="iTemp.cs">
+      <SubType>Code</SubType>
+    </None>
+    <Compile Include="iTimeCustomDrawing.cs" />
+    <Compile Include="iTrend.cs" />
+    <Compile Include="iTriggerLine.cs" />
+    <Compile Include="iWilliamsPercentRange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iZigZag.cs" />
+    <Compile Include="Kernel.cs" />
+    <Compile Include="iZZEnsign.cs" />
+    <Content Include="dict\hma.xml" />
+    <Content Include="dict\primary.xml" />
+    <Content Include="dict\toolbox.xml" />
+    <Content Include="dict\vpci.xml" />
+    <None Include="old\custom.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\ForecastOscilator.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\Fractals.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\HeikinAshiMOD.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\JMA.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\ParabolicSARold.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\SHI_Channel.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\toolbox.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\VPCI.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="old\WeekTime.cs">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gordago.Trader\Trader.csproj">
+      <Project>{CA02238E-00E0-403E-9784-FB6583F288CB}</Project>
+      <Name>Trader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

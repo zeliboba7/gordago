@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 2.2.1.2648
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toolbox", "toolbox\toolbox.csproj", "{2B907F4D-EAD5-4099-BCF6-F700F6707AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trader", "..\Gordago.Trader\Trader.csproj", "{CA02238E-00E0-403E-9784-FB6583F288CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_c|Any CPU = Debug_c|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DEMO_DEBUG|Any CPU = DEMO_DEBUG|Any CPU
+		DEMO|Any CPU = DEMO|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.Debug_c|Any CPU.ActiveCfg = Debug_c|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.Debug_c|Any CPU.Build.0 = Debug_c|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.DEMO_DEBUG|Any CPU.ActiveCfg = DEMO_DEBUG|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.DEMO_DEBUG|Any CPU.Build.0 = DEMO_DEBUG|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.DEMO|Any CPU.ActiveCfg = DEMO|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.DEMO|Any CPU.Build.0 = DEMO|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B907F4D-EAD5-4099-BCF6-F700F6707AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.Debug_c|Any CPU.ActiveCfg = DEBUG_C|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.Debug_c|Any CPU.Build.0 = DEBUG_C|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.DEMO_DEBUG|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.DEMO_DEBUG|Any CPU.Build.0 = Debug|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.DEMO|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.DEMO|Any CPU.Build.0 = Debug|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA02238E-00E0-403E-9784-FB6583F288CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
