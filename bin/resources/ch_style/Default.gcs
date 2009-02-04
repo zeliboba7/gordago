@@ -1,0 +1,17 @@
+<ChartStyle Version="1.0">
+  <Color Name="BackColor">-3475510</Color>
+  <Color Name="BorderColor">-16776961</Color>
+  <Color Name="GridColor">1342177485</Color>
+  <Color Name="ScaleForeColor">-16776961</Color>
+  <Color Name="BarColor">-7077677</Color>
+  <Color Name="BarDownColor">-5269535</Color>
+  <Color Name="BarUpColor">-156</Color>
+  <Color Name="SellTradeColor">-29556</Color>
+  <Color Name="SellOrderColor">-29556</Color>
+  <Color Name="BuyTradeColor">-6967297</Color>
+  <Color Name="BuyOrderColor">-6967297</Color>
+  <Color Name="StopTradeColor">-8388608</Color>
+  <Color Name="StopOrderColor">-8388608</Color>
+  <Color Name="LimitTradeColor">-15045594</Color>
+  <Color Name="LimitOrderColor">-15045594</Color>
+</ChartStyle>
