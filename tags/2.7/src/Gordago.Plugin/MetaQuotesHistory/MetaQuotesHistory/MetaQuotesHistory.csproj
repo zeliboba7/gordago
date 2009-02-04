@@ -1,0 +1,74 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E34000C4-B750-4EE7-B461-98CDAE40DB42}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gordago.PlugIn.MetaQuotesHistory</RootNamespace>
+    <AssemblyName>MetaQuotesHistory</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Program Files\Gordago\Forex Optimizer TT\plugin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Program Files\Gordago\Forex Optimizer TT\plugin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="trader, Version=1.1.2895.31353, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Executable\Forex Optimizer TT\trader.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvertToTicksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertToTicksForm.Designer.cs">
+      <DependentUpon>ConvertToTicksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MQHConverter.cs" />
+    <Compile Include="MQHPlugIn.cs" />
+    <Compile Include="LangDictionary.cs" />
+    <Compile Include="MQHErrors.cs" />
+    <Compile Include="MQHBarBuffer.cs" />
+    <Compile Include="MQHBarList.cs" />
+    <Compile Include="MQHBarReader.cs" />
+    <Compile Include="MQHSymbol.cs" />
+    <Compile Include="MQHSymbolManager.cs" />
+    <Compile Include="MQHTickList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConvertToTicksForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConvertToTicksForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
