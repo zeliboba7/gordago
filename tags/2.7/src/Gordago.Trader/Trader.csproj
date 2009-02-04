@@ -1,0 +1,404 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA02238E-00E0-403E-9784-FB6583F288CB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>trader</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Gordago</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <BaseIntermediateOutputPath>..\..\obj\trader\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Executable\Forex Optimizer TT\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO|AnyCPU' ">
+    <OutputPath>..\Executable\Forex Optimizer TT\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\Executable\Forex Optimizer TT\trader.XML</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEBUG_C|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DEBUG_C\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\Analyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\AnalyzerManager.cs" />
+    <Compile Include="Analysis\BarsVector.cs" />
+    <Compile Include="Analysis\CacheCollection.cs" />
+    <Compile Include="Analysis\Chart\ChartAnalyzer.cs" />
+    <Compile Include="Analysis\Chart\ChartBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartFigure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\ChartFigureList.cs" />
+    <Compile Include="Analysis\Chart\ChartPanel\ChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartPanel\ChartPanelList.cs">
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartPanel\ChartPanelManager.cs" />
+    <Compile Include="Analysis\Chart\ChartPanel\ChartPanelProperies.cs" />
+    <Compile Include="Analysis\Chart\ChartPanel\ExtButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartPanel\ChartPanelContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartPanel\ChartPanelContainer.Designer.cs">
+      <DependentUpon>ChartPanelContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartTicksManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Figures\ChartFigureBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Figures\ChartFigureBidAsk.cs" />
+    <Compile Include="Analysis\Chart\Figures\ChartFigureIndicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Figures\ChartFigureText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\IChartBox.cs" />
+    <Compile Include="Analysis\Chart\IChartManager.cs">
+    </Compile>
+    <Compile Include="Analysis\Chart\Objects\ChartObject.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectCrosshair.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectCycleLines.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectLabel.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectRectagle.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectTickChart.cs" />
+    <Compile Include="Analysis\Chart\Objects\Fibonacci\ChartObjectFibo.cs" />
+    <Compile Include="Analysis\Chart\Objects\Fibonacci\ChartObjectFiboArcs.cs" />
+    <Compile Include="Analysis\Chart\Objects\Fibonacci\ChartObjectFiboExpansion.cs" />
+    <Compile Include="Analysis\Chart\Objects\Fibonacci\ChartObjectFiboFan.cs" />
+    <Compile Include="Analysis\Chart\Objects\Fibonacci\ChartObjectFiboLine.cs" />
+    <Compile Include="Analysis\Chart\Objects\Fibonacci\ChartObjectFiboTimeZone.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectHorizontalLine.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectLine.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectManager.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectPoints.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectTrendLine.cs" />
+    <Compile Include="Analysis\Chart\Objects\ChartObjectVerticalLine.cs" />
+    <Compile Include="Analysis\Chart\ChartScaleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\GDI.cs" />
+    <Compile Include="Analysis\Kernel\High.cs" />
+    <Compile Include="Analysis\Kernel\Median.cs" />
+    <Compile Include="API\BrokerJournal.cs" />
+    <Compile Include="API\Comment\CMTTagCollection.cs" />
+    <Compile Include="API\Comment\CMTManager.cs" />
+    <Compile Include="API\Comment\CMTTag.cs" />
+    <Compile Include="API\Comment\CMTTagFont.cs" />
+    <Compile Include="API\Comment\CMTTagValue.cs" />
+    <Compile Include="API\IClosedTrade.cs" />
+    <Compile Include="API\IOnlineRate.cs" />
+    <Compile Include="Windows\Forms\DockManager.cs" />
+    <Compile Include="Windows\Forms\EasyCollectionEditor.cs" />
+    <Compile Include="API\Broker.cs" />
+    <Compile Include="API\Enums.cs" />
+    <Compile Include="API\IAccount.cs" />
+    <Compile Include="API\ITrader.cs" />
+    <Compile Include="API\IOrder.cs" />
+    <Compile Include="API\BrokerError.cs" />
+    <Compile Include="API\ITrade.cs" />
+    <Compile Include="Windows\Forms\RectangleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ScreenRectTSP.cs" />
+    <Compile Include="Windows\Forms\ToolStripControlManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ToolStripItemPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\WMsg.cs" />
+    <Compile Include="XmlNodeManager.cs" />
+    <Compile Include="Analysis\DrawingIndicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Indicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IndicatorManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Kernel\Close.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Kernel\kernel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\LimitAnalyzer.cs" />
+    <Compile Include="Analysis\Parameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Strategy.cs" />
+    <Compile Include="Analysis\Vector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\BarBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\BarFileBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\BarFileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\BarManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\BarReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\BarWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docs\DocParameterType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docs\DocProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docs\DocProviderFunc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docs\DocProviderIndic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docs\DocProviderParam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docs\DocUpdates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISymbol.cs" />
+    <Compile Include="PlugIn\IMainForm.cs" />
+    <Compile Include="PlugIn\IPlugIn.cs" />
+    <Compile Include="Symbol\ProcessMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Symbol\Symbol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\SymbolManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tick.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickFileBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickFileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickFileMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbol\TickWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Analysis\Chart\ChartManager.resx">
+      <DependentUpon>ChartManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\ChartPanel\ChartPanelContainer.resx">
+      <DependentUpon>ChartPanelContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\COHorLine.cur" />
+    <None Include="res\COVHLine.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\COVerLine.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VCHorsScale.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_col_verhorline.gif" />
+    <None Include="Resources\m_co_cycle_lines.gif" />
+    <None Include="Resources\m_co_default.gif" />
+    <None Include="Resources\m_co_fibo.gif" />
+    <None Include="Resources\m_co_fibo_arcs.gif" />
+    <None Include="Resources\m_co_fibo_fan.gif" />
+    <None Include="Resources\m_co_fibo_timezone.gif" />
+    <None Include="Resources\m_co_horline.gif" />
+    <None Include="Resources\m_co_tradeline.gif" />
+    <None Include="Resources\m_co_trendline.gif" />
+    <None Include="Resources\m_co_vertline.gif" />
+    <None Include="Resources\m_co_label.gif" />
+    <None Include="Resources\COLabel.cur" />
+    <None Include="Resources\m_co_fibo_expansion.gif" />
+    <None Include="Resources\COFiboExp.cur" />
+    <None Include="Resources\m_co_rectangle.gif" />
+    <None Include="Resources\CORectangle.cur" />
+    <None Include="Resources\COTriangle.cur" />
+    <None Include="Resources\m_co_triangle.gif" />
+    <Content Include="res\COCycleLines.cur" />
+    <Content Include="res\COFiboArcs.cur" />
+    <Content Include="res\COFiboFan.cur" />
+    <Content Include="res\COTrendLine.cur" />
+    <Content Include="Windows\Forms\Text.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
