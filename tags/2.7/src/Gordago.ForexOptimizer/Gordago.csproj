@@ -1,0 +1,917 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B19BD3CE-7600-4924-98DE-F548DF7CEE87}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>MainIcon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>gso</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gordago</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Gordago.GSOStart</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <BaseIntermediateOutputPath>..\..\obj\fo\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>None</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEMO</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>None</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO_DEBUG|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEMO</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEBUG_C|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>C:\Program Files\Gordago\Forex Optimizer TT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\cursit\cursit.csproj">
+      <Project>{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}</Project>
+      <Name>cursit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartFigureBrokerInfo.cs" />
+    <Compile Include="Analysis\Chart\ChartFigureOrders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartFigureProgressBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartFigureCloseTrades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartFigureTrades.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartForm.Designer.cs">
+      <DependentUpon>ChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartStyleManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\ChartTemplates.cs" />
+    <Compile Include="Analysis\Chart\Panels\SymbolsChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\SymbolsChartPanel.Designer.cs">
+      <DependentUpon>SymbolsChartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\SymbolsChartPanelProperties.cs" />
+    <Compile Include="Analysis\Chart\Panels\TickChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\TickChartPanel.Designer.cs">
+      <DependentUpon>TickChartPanel.cs</DependentUpon>
+    </Compile>
+    <None Include="API\VirtualForex\Temp\TestHistoryInfo.cs" />
+    <Compile Include="Analysis\Core\TestReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Optimizer.cs" />
+    <Compile Include="Analysis\Core\VisualStrategy\VSBreakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\VisualStrategy\VSBreakForm.Designer.cs">
+      <DependentUpon>VSBreakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Core\VisualStrategy\VSRow.cs" />
+    <Compile Include="Analysis\Core\VisualStrategy\VSVariant.cs" />
+    <Compile Include="Analysis\Core\VisualStrategy\VSVariantList.cs" />
+    <Compile Include="API\GUI\ExtButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\OrderCalculator.cs" />
+    <Compile Include="API\StrategyEngine.cs" />
+    <Compile Include="API\TradeCalculator.cs" />
+    <Compile Include="API\VirtualBrokerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\VirtualBrokerSettings.Designer.cs">
+      <DependentUpon>VirtualBrokerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\VirtualForex\ClosedTrade.cs" />
+    <Compile Include="API\VirtualForex\PipCost.cs" />
+    <None Include="API\VirtualForex\Temp\TestBars.cs" />
+    <None Include="API\VirtualForex\Temp\TestServer.cs" />
+    <None Include="API\VirtualForex\Temp\TestSymbol.cs" />
+    <None Include="API\VirtualForex\Temp\TestTickManager.cs" />
+    <Compile Include="Analysis\Core\TradeVariables.cs" />
+    <Compile Include="Analysis\Core\Vm\Compiler\ArithmeticExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\BinaryExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\CompilerException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\InvokeExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\LogicalExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\NotExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\RelationExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\Compiler\ValueExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\VmCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\Vm\VmEvaluator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\VirtualAnalyzer.cs" />
+    <Compile Include="API\BrokerCommand.cs" />
+    <Compile Include="API\BrokerCommandManager.cs" />
+    <Compile Include="API\GUI\CheckNudPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\ConnectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\GUI\ConnectSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="API\GUI\HandOperate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\HandOperate.Designer.cs">
+      <DependentUpon>HandOperate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HandOperateChartPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HandOperateChartPanel.Designer.cs">
+      <DependentUpon>HandOperateChartPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\GUI\HandTradePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\HandTradePreview.Designer.cs">
+      <DependentUpon>HandTradePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\GUI\HTTPSettingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\IBrokerEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="API\VirtualForex\Temp\OnlineServer.cs" />
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HOCPDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HOCPDialog.Designer.cs">
+      <DependentUpon>HOCPDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HOCPProperties.cs">
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HOCPActionButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Chart\Panels\OperatePanel\HOCPActionButton.Designer.cs">
+      <DependentUpon>HOCPActionButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\GUI\OrdersOperatePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\SULine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\SULines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\SUSBStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\MainLeftPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\MainLeftPanel.Designer.cs">
+      <DependentUpon>MainLeftPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\GUI\Terminal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <None Include="API\VirtualForex\Temp\APICommandManager.cs">
+      <SubType>Code</SubType>
+    </None>
+    <Compile Include="API\GUI\TradersOperatePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\TrControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\GUI\TrControl.Designer.cs">
+      <DependentUpon>TrControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="API\GUI\TTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="API\VirtualForex\Account.cs" />
+    <Compile Include="API\VirtualForex\OnlineRate.cs" />
+    <Compile Include="API\VirtualForex\Order.cs" />
+    <None Include="API\VirtualForex\Temp\IServerLog.cs" />
+    <Compile Include="API\VirtualForex\Trade.cs" />
+    <Compile Include="API\VirtualForex\TradeList.cs" />
+    <Compile Include="API\VirtualForex\VirtualBroker.cs" />
+    <Compile Include="API\VirtualForex\VSSettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="API\VirtualForex\VSSettingsPanel.Designer.cs">
+      <DependentUpon>VSSettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CompForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExplorerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExplorerPanel.Designer.cs">
+      <DependentUpon>ExplorerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GConfig\CFIConnect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GConfig\CFIGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GConfig\CFIHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GConfig\CFIMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GConfig\ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GConfig\ConfigFormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GordagoImages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GordagoMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GSOStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.MenuEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Strategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormManager.cs" />
+    <Compile Include="ProgramModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramModeForm.Designer.cs">
+      <DependentUpon>ProgramModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBrowserForm.Designer.cs">
+      <DependentUpon>ReportBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\DownloaderArhiveHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FunctionBilderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\FunctionBilderControl.Designer.cs">
+      <DependentUpon>FunctionBilderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\ServerArhiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\SymbolsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stock\SymbolsPanel.Designer.cs">
+      <DependentUpon>SymbolsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\TradeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Strategy\BalanceChart.cs">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="Strategy\BalanceChart.Designer.cs">
+      <DependentUpon>BalanceChart.cs</DependentUpon>
+    </None>
+    <Compile Include="Strategy\CreateStrategyOrIndicatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\CreateStrategyOrIndicatorForm.Designer.cs">
+      <DependentUpon>CreateStrategyOrIndicatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\CustomFuntionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\CustomFuntionControl.Designer.cs">
+      <DependentUpon>CustomFuntionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\CustomIndicatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\CustomIndicatorForm.Designer.cs">
+      <DependentUpon>CustomIndicatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParamColor.cs" />
+    <Compile Include="Strategy\IStrategyForm.cs" />
+    <Compile Include="Strategy\StrategyDLLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\StrategyDLLForm.Designer.cs">
+      <DependentUpon>StrategyDLLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\TesterReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\TesterReportForm.Designer.cs">
+      <DependentUpon>TesterReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\TextBoxObject\Elements\TextBoxObjElement.cs" />
+    <Compile Include="Strategy\TextBoxObject\Elements\TextBoxObjElementChar.cs" />
+    <Compile Include="Strategy\TextBoxObject\Elements\TextBoxObjElementCtrl.cs" />
+    <Compile Include="Strategy\TextBoxObject\ITextBoxObjectElement.cs" />
+    <Compile Include="Strategy\TextBoxObject\TextBoxObject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strategy\TextBoxObject\TextBoxObjectEvents.cs" />
+    <Compile Include="Strategy\TextBoxObject\TextBoxObjGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strategy\TextBoxObject\TextBoxObjList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strategy\CheckPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\EditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\EditorForm.Designer.cs">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\DocParameterUsing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParamEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParamFloat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParamNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\FIndicParam\IndicFuncParamVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\IndicatorGUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\IndicFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\IndicFunctionBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strategy\FIndicator\IndicFunctionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\IO\StrategyCompile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\IO\StrategyExportMQL4.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\IO\StrategyExportMQL4OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\IO\StrategyExportMQLCustomIndicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\IO\StrategyIO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\LabelVertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strategy\LabelVertical.Designer.cs">
+      <DependentUpon>LabelVertical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\LstObject\DragItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\LstObject\ListObject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strategy\LstObject\ListObjItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\POPriceCaclulator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\POPriceCaclulator.Designer.cs">
+      <DependentUpon>POPriceCaclulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\SEConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\SEditorRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\SEditorRowCompile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\SEditorTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\TesterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\SEditorVariants.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strategy\SEFormsEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\Core\VisualStrategy\VisualStrategy.cs" />
+    <Compile Include="API\VirtualForex\ViBars.cs" />
+    <Compile Include="API\VirtualForex\ViTickManager.cs" />
+    <Compile Include="WebUpdate\DownloadFileEngine.cs" />
+    <Compile Include="WebUpdate\GetFullVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebUpdate\GetFullVersionForm.Designer.cs">
+      <DependentUpon>GetFullVersionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebUpdate\ProxySetting.cs" />
+    <Compile Include="WebUpdate\Update.cs" />
+    <Compile Include="WebUpdate\UpdateEngine.cs" />
+    <Compile Include="WebUpdate\UpdateFileInfo.cs" />
+    <Compile Include="WebUpdate\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebUpdate\UpdateSynchronizeListFile.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\ChartForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\Panels\SymbolsChartPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SymbolsChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\Panels\TickChartPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TickChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Core\VisualStrategy\VSBreakForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VSBreakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\CheckNudPoint.resx">
+      <DependentUpon>CheckNudPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\ConnectForm.resx">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\ConnectSettingForm.resx">
+      <DependentUpon>ConnectSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\HandOperate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HandOperate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\Panels\OperatePanel\HandOperateChartPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HandOperateChartPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\HandTradePreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HandTradePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\HTTPSettingPanel.resx">
+      <DependentUpon>HTTPSettingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\Panels\OperatePanel\HOCPDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HOCPDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Chart\Panels\OperatePanel\HOCPActionButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HOCPActionButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\OrdersOperatePanel.resx">
+      <DependentUpon>OrdersOperatePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\SULine.resx">
+      <DependentUpon>SULine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\SULines.resx">
+      <DependentUpon>SULines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\SUSBStatus.resx">
+      <DependentUpon>SUSBStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\MainLeftPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainLeftPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\Terminal.resx">
+      <DependentUpon>Terminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\TradersOperatePanel.resx">
+      <DependentUpon>TradersOperatePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\GUI\TrControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\VirtualBrokerSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VirtualBrokerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="API\VirtualForex\VSSettingsPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VSSettingsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompForm.resx">
+      <DependentUpon>CompForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExplorerPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExplorerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramModeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgramModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBrowserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\FunctionBilderControl.resx">
+      <DependentUpon>FunctionBilderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\BalanceChart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BalanceChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\CreateStrategyOrIndicatorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateStrategyOrIndicatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\CustomFuntionControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomFuntionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\CustomIndicatorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomIndicatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\StrategyDLLForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StrategyDLLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\TesterReportForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TesterReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\TextBoxObject\TextBoxObjList.resx">
+      <DependentUpon>TextBoxObjList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\EditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\POPriceCaclulator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>POPriceCaclulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\TesterPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TesterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConfig\CFIConnect.resx">
+      <DependentUpon>CFIConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConfig\CFIGraph.resx">
+      <DependentUpon>CFIGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConfig\CFIHistory.resx">
+      <DependentUpon>CFIHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConfig\CFIMain.resx">
+      <DependentUpon>CFIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConfig\ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConfig\ConfigFormItem.resx">
+      <DependentUpon>ConfigFormItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\ServerArhiveForm.resx">
+      <DependentUpon>ServerArhiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\SymbolsPanel.resx">
+      <DependentUpon>SymbolsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\CheckPeriod.resx">
+      <DependentUpon>CheckPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\FIndicator\IndicFunctionBox.resx">
+      <DependentUpon>IndicFunctionBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\IO\StrategyExportMQL4OptionsForm.resx">
+      <DependentUpon>StrategyExportMQL4OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\IO\StrategyExportMQLCustomIndicForm.resx">
+      <DependentUpon>StrategyExportMQLCustomIndicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\LstObject\ListObject.resx">
+      <DependentUpon>ListObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\SEConfig.resx">
+      <DependentUpon>SEConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\SEditorRowCompile.resx">
+      <DependentUpon>SEditorRowCompile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\SEditorTable.resx">
+      <DependentUpon>SEditorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\SEditorVariants.resx">
+      <DependentUpon>SEditorVariants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebUpdate\GetFullVersionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetFullVersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebUpdate\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\m_viewcpanel.gif" />
+    <None Include="Resources\m_viewtools.gif" />
+    <None Include="Resources\m_viewsymbols.gif" />
+    <None Include="Resources\m_expmql.gif" />
+    <None Include="Resources\m_save.gif" />
+    <None Include="Resources\m_new.gif" />
+    <None Include="Resources\m_open.gif" />
+    <None Include="Resources\m_open.bmp" />
+    <None Include="Resources\1268.bmp" />
+    <None Include="Resources\MainIcon.ico" />
+    <None Include="Strategy\FIndicator\FIndicParam\CalculateDoubleParam.cs">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="Strategy\FIndicator\FIndicParam\IndicFuncParamTimeFrame.cs">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cupscale.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cdownscale.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_ccandle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cbar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cline.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cautoscroll.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cchartshift.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_ctimeframe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_cgrid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_czoomout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_czoomin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_connect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_disconnect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MainIcon.ico" />
+    <None Include="Resources\m_viewterminal.gif" />
+    <None Include="Resources\m_disconnect1.gif" />
+    <None Include="Resources\m_connect1.gif" />
+    <None Include="Resources\m_co_fibo_timezone.gif" />
+    <None Include="Resources\m_co_cycle_lines.gif" />
+    <None Include="Resources\close_button.gif" />
+    <None Include="Resources\m_co_fibo_arcs.gif" />
+    <None Include="Resources\m_co_fibo_fan.gif" />
+    <None Include="Resources\m_co_fibo.gif" />
+    <None Include="Resources\m_co_trendline.gif" />
+    <None Include="Resources\m_co_tradeline.gif" />
+    <None Include="Resources\m_col_verhorline.gif" />
+    <None Include="Resources\m_co_default.gif" />
+    <None Include="Resources\m_co_horline.gif" />
+    <None Include="Resources\m_co_vertline.gif" />
+    <None Include="Resources\g.gif">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gordago.Trader\Trader.csproj">
+      <Project>{CA02238E-00E0-403E-9784-FB6583F288CB}</Project>
+      <Name>Trader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
