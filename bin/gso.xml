@@ -1,0 +1,102 @@
+<Gordago Version="1.1" State="True" X="-4" Y="-4" Width="800" Height="600">
+  <DockManager>
+    <ToolStripPanel Name="_tspRight" Items="_tsiExplorer" />
+    <ToolStrip Name="_tsiExplorer" X="0" Y="0" Width="168" Height="679" Visible="True" Items="" Row="0" />
+    <ToolStripPanel Name="_tspLeft" Items="_tsiSymbols" />
+    <ToolStrip Name="_tsiSymbols" X="0" Y="0" Width="155" Height="679" Visible="True" Items="" Row="0" />
+    <ToolStripPanel Name="_tspBottom" Items="_tsiTester,_tsiTerminal" />
+    <ToolStrip Name="_tsiTester" X="0" Y="0" Width="1280" Height="99" Visible="False" Items="" Row="0" />
+    <ToolStrip Name="_tsiTerminal" X="0" Y="0" Width="1280" Height="193" Visible="True" Items="" Row="1" />
+    <ToolStripPanel Name="_tspTop" Items="_mainMenu,_tsStandart,_tsTimeFrame,_tsCharts,_tsChartObject,_tsVirtualServer" />
+    <ToolStrip Name="_mainMenu" X="0" Y="0" Width="1280" Height="24" Visible="True" Items=",,,,_mniFile,_mniView,_mniChart,_mniBroker,_mniService,_mniWindow,_mniHelp" Row="0" />
+    <ToolStripItem Name="" X="6" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="" X="1260" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="" X="1240" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="" X="1220" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniFile" X="26" Y="2" Width="35" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniView" X="61" Y="2" Width="41" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniChart" X="102" Y="2" Width="46" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniBroker" X="128" Y="2" Width="50" Height="20" Visible="False" />
+    <ToolStripItem Name="_mniService" X="148" Y="2" Width="54" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniWindow" X="202" Y="2" Width="57" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniHelp" X="259" Y="2" Width="40" Height="20" Visible="True" />
+    <ToolStrip Name="_tsStandart" X="0" Y="24" Width="231" Height="25" Visible="True" Items="_mnbFileNew,_mnbFileOpen,_mnbFileSave,toolStripSeparator5,_mnbVSymbols,_mnbVTerminal,_mnbVControlPanel,_mnbVTools,toolStripSeparator16,_mnbConnect,_mnbDisconnect" Row="1" />
+    <ToolStripItem Name="_mnbFileNew" X="9" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbFileOpen" X="32" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbFileSave" X="55" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="toolStripSeparator5" X="78" Y="0" Width="6" Height="25" Visible="True" />
+    <ToolStripItem Name="_mnbVSymbols" X="84" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbVTerminal" X="107" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbVControlPanel" X="130" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbVTools" X="153" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="toolStripSeparator16" X="176" Y="0" Width="6" Height="25" Visible="True" />
+    <ToolStripItem Name="_mnbConnect" X="182" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbDisconnect" X="205" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStrip Name="_tsTimeFrame" X="231" Y="24" Width="280" Height="25" Visible="True" Items="_mnbbtnCTF_60,_mnbbtnCTF_300,_mnbbtnCTF_600,_mnbbtnCTF_900,_mnbbtnCTF_1800,_mnbbtnCTF_3600,_mnbbtnCTF_14400,_mnbbtnCTF_86400,_mnbbtnCTF_604800,_mnbbtnCTF_2592000" Row="1" />
+    <ToolStripItem Name="_mnbbtnCTF_60" X="9" Y="1" Width="25" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_300" X="34" Y="1" Width="25" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_600" X="59" Y="1" Width="31" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_900" X="90" Y="1" Width="31" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_1800" X="121" Y="1" Width="31" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_3600" X="152" Y="1" Width="24" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_14400" X="176" Y="1" Width="24" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_86400" X="200" Y="1" Width="24" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_604800" X="224" Y="1" Width="27" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbbtnCTF_2592000" X="251" Y="1" Width="26" Height="22" Visible="True" />
+    <ToolStrip Name="_tsCharts" X="511" Y="24" Width="223" Height="25" Visible="True" Items="_mnbCCandle,_mnbCBar,_mnbCLine,toolStripSeparator8,_mnbCAutoScroll,_mnbCChartShift,toolStripSeparator7,_mnbCZoomOut,_mnbCZoomIn,toolStripSeparator9,_mnbCTimeFrameList" Row="1" />
+    <ToolStripItem Name="_mnbCCandle" X="9" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbCBar" X="32" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbCLine" X="55" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="toolStripSeparator8" X="78" Y="0" Width="6" Height="25" Visible="True" />
+    <ToolStripItem Name="_mnbCAutoScroll" X="84" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbCChartShift" X="107" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="toolStripSeparator7" X="130" Y="0" Width="6" Height="25" Visible="True" />
+    <ToolStripItem Name="_mnbCZoomOut" X="136" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbCZoomIn" X="159" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="toolStripSeparator9" X="182" Y="0" Width="6" Height="25" Visible="True" />
+    <ToolStripItem Name="_mnbCTimeFrameList" X="188" Y="1" Width="32" Height="22" Visible="True" />
+    <ToolStrip Name="_tsChartObject" X="0" Y="49" Width="317" Height="25" Visible="True" Items="_mnbCODefault,_mntssCO_default,mnbCO_Gordago_Analysis_Chart_ChartObjectCrosshair,mnbCO_Gordago_Analysis_Chart_ChartObjectVerticalLine,mnbCO_Gordago_Analysis_Chart_ChartObjectHorizontalLine,mnbCO_Gordago_Analysis_Chart_ChartObjectTrendLine,mnbCO_Gordago_Analysis_Chart_ChartObjectCycleLines,mnbCO_Gordago_Analysis_Chart_ChartObjectFiboFan,mnbCO_Gordago_Analysis_Chart_ChartObjectFiboRetracement,mnbCO_Gordago_Analysis_Chart_ChartObjectFiboTimeZones,mnbCO_Gordago_Analysis_Chart_ChartObjectFiboExpansion,mnbCO_Gordago_Analysis_Chart_ChartObjectFiboArcs,mnbCO_Gordago_Analysis_Chart_ChartObjectLabel,mnbCO_Gordago_Analysis_Chart_ChartObjectRectagle" Row="2" />
+    <ToolStripItem Name="_mnbCODefault" X="9" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="_mntssCO_default" X="32" Y="0" Width="6" Height="25" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectCrosshair" X="38" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectVerticalLine" X="61" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectHorizontalLine" X="84" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectTrendLine" X="107" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectCycleLines" X="130" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectFiboFan" X="153" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectFiboRetracement" X="176" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectFiboTimeZones" X="199" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectFiboExpansion" X="222" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectFiboArcs" X="245" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectLabel" X="268" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStripItem Name="mnbCO_Gordago_Analysis_Chart_ChartObjectRectagle" X="291" Y="1" Width="23" Height="22" Visible="True" />
+    <ToolStrip Name="_tsVirtualServer" X="317" Y="49" Width="105" Height="25" Visible="True" Items="_mnbVSPause,_mnbVSSped" Row="2" />
+    <ToolStripItem Name="_mnbVSPause" X="9" Y="1" Width="40" Height="22" Visible="True" />
+    <ToolStripItem Name="_mnbVSSped" X="49" Y="1" Width="53" Height="22" Visible="True" />
+  </DockManager>
+  <Chart State="max" Left="-4" Top="-30" Width="961" Height="687" Symbol="EURUSD" TF="3600" Pos="0" Zoom="3" BarType="0" Grid="True" PerSeps="False" ChartShift="True" AutoScroll="True">
+    <Box Percent="69.27">
+      <Object Name="ChartObjectTrendLine_f9d84373e008" Type="Gordago.Analysis.Chart.ChartObjectTrendLine" Time0="1160139600" Price0="1.2721" Time1="1160463600" Price1="1.261023" BasisLineColor="-65536" BasisLineWidth="1" IsVector="True" />
+      <Indicator Name="__indicator_Envelope598" Type="Gordago.StockOptimizer2.Toolbox.iEnvelope" Shift="0">
+        <Int Name="Period">21</Int>
+        <Enum Name="__MAType">1</Enum>
+        <Vector Name="__ApplyTo">Close</Vector>
+        <Float Name="Deviation">0,1</Float>
+        <Color Name="ColorTopEnvelope">-16741493</Color>
+        <Color Name="ColorMiddleEnvelope">-16741493</Color>
+        <Color Name="ColorBottomEnvelope">-16741493</Color>
+      </Indicator>
+    </Box>
+    <Box Percent="30.48">
+      <Indicator Name="__indicator_ADX66" Type="Gordago.StockOptimizer2.Toolbox.iADX" Shift="0">
+        <Vector Name="VectorLow">Low</Vector>
+        <Vector Name="VectorHigh">High</Vector>
+        <Vector Name="VectorClose">Close</Vector>
+        <Int Name="Period">13</Int>
+        <Color Name="ColorPDI">-16744448</Color>
+        <Color Name="ColorMDI">-2180985</Color>
+        <Color Name="ColorADX">-4419697</Color>
+      </Indicator>
+    </Box>
+  </Chart>
+</Gordago>

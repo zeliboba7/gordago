@@ -1,0 +1,223 @@
+<Strategy Name="Sample strategy" Sound="aesc007.wav" Version="1.3">
+  <Description>
+  </Description>
+  <Sell>
+    <Variant>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="1" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">35</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+        <char>&gt;</char>
+        <Func Id="2" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">13</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+      </Row>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="1" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">35</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+        <char>&lt;=</char>
+        <Func Id="2" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">13</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+      </Row>
+    </Variant>
+  </Sell>
+  <SellExit>
+    <StopLoss Checked="True">
+      <inta>
+        <int>20</int>
+        <int>20</int>
+        <int>1</int>
+      </inta>
+    </StopLoss>
+    <TackeProfit Checked="True">
+      <inta>
+        <int>30</int>
+        <int>30</int>
+        <int>1</int>
+      </inta>
+    </TackeProfit>
+    <TrailingStop Checked="False">
+      <inta>
+        <int>15</int>
+        <int>15</int>
+        <int>1</int>
+      </inta>
+    </TrailingStop>
+  </SellExit>
+  <Buy>
+    <Variant>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="3" TypeName="Gordago.StockOptimizer2.Toolbox.RSI">
+          <Param>
+            <int Name="Period">13</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+        <char>&gt;70</char>
+      </Row>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="3" TypeName="Gordago.StockOptimizer2.Toolbox.RSI">
+          <Param>
+            <int Name="Period">13</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+        <char>&lt;=70</char>
+      </Row>
+    </Variant>
+  </Buy>
+  <BuyExit>
+    <StopLoss Checked="True">
+      <inta>
+        <int>20</int>
+        <int>20</int>
+        <int>1</int>
+      </inta>
+    </StopLoss>
+    <TackeProfit Checked="True">
+      <inta>
+        <int>30</int>
+        <int>30</int>
+        <int>1</int>
+      </inta>
+    </TackeProfit>
+    <TrailingStop Checked="False">
+      <inta>
+        <int>15</int>
+        <int>15</int>
+        <int>1</int>
+      </inta>
+    </TrailingStop>
+  </BuyExit>
+  <POPriceSell>
+    <Row TimeFrame="3600">
+      <Func Id="0" TypeName="Gordago.Analysis.Kernel.Close">
+        <Param>
+          <int Name="__Shift">0</int>
+        </Param>
+      </Func>
+      <char>-</char>
+      <Func Id="0" TypeName="Gordago.Analysis.Toolbox.PointFunction">
+        <Param>
+          <int Name="Point">20</int>
+          <int Name="Digits">-1</int>
+          <str Name="__Close">Close</str>
+          <int Name="__Shift">0</int>
+        </Param>
+      </Func>
+    </Row>
+  </POPriceSell>
+  <POSell Modify="False">
+    <Variant>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="5" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">34</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+        <char>&lt;</char>
+        <Func Id="6" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">13</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+      </Row>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="5" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">34</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+        <char>&gt;=</char>
+        <Func Id="6" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">13</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+      </Row>
+    </Variant>
+  </POSell>
+  <POSellDelete>
+    <Variant>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="5" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">34</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+        <char>&gt;</char>
+        <Func Id="6" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">13</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">0</int>
+          </Param>
+        </Func>
+      </Row>
+      <Row TimeFrame="3600" Status="Compile">
+        <Func Id="5" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">34</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+        <char>&lt;=</char>
+        <Func Id="6" TypeName="Gordago.StockOptimizer2.Toolbox.MA">
+          <Param>
+            <int Name="Period">13</int>
+            <int Name="__MAType">1</int>
+            <str Name="__ApplyTo">Close</str>
+            <int Name="__Shift">1</int>
+          </Param>
+        </Func>
+      </Row>
+    </Variant>
+  </POSellDelete>
+  <POPriceBuy>
+    <Row TimeFrame="0" />
+  </POPriceBuy>
+  <POBuy Modify="False" />
+  <POBuyDelete />
+</Strategy>
