@@ -1,0 +1,32 @@
+<PipCost Version="1.0">
+  <Symbol Name="EURUSD" Spread="3" Cost="1" />
+  <Symbol Name="USDJPY" Spread="3" Cost="0.8259344" />
+  <Symbol Name="GBPUSD" Spread="4" Cost="1" />
+  <Symbol Name="USDCHF" Spread="4" Cost="0.8047642" />
+  <Symbol Name="USDCAD" Spread="5" Cost="0.8567879" />
+  <Symbol Name="AUDUSD" Spread="5" Cost="1" />
+  <Symbol Name="EURGBP" Spread="6" Cost="1.952" />
+  <Symbol Name="EURJPY" Spread="5" Cost="0.8259344" />
+  <Symbol Name="GBPJPY" Spread="9" Cost="0.8259344" />
+  <Symbol Name="CHFJPY" Spread="8" Cost="0.8259344" />
+  <Symbol Name="EURCHF" Spread="6" Cost="0.8047642" />
+  <Symbol Name="NZDUSD" Spread="6" Cost="1" />
+  <Symbol Name="GBPCHF" Spread="9" Cost="0.8047642" />
+  <Symbol Name="AUDJPY" Spread="6" Cost="0.8259344" />
+  <Symbol Name="EURAUD" Spread="9" Cost="0.78275" />
+  <Symbol Name="EURCAD" Spread="9" Cost="0.8567879" />
+  <Symbol Name="AUDCAD" Spread="9" Cost="0.8567879" />
+  <Symbol Name="NZDJPY" Spread="7" Cost="0.8259344" />
+  <Symbol Name="CADJPY" Spread="6" Cost="0.8259344" />
+  <Symbol Name="GBPCAD" Spread="10" Cost="0.8567879" />
+  <Symbol Name="GBPNZD" Spread="26" Cost="0.6918" />
+  <Symbol Name="GBPAUD" Spread="11" Cost="0.78275" />
+  <Symbol Name="AUDNZD" Spread="12" Cost="0.6918" />
+  <Symbol Name="CADCHF" Spread="10" Cost="0.8047642" />
+  <Symbol Name="AUDCHF" Spread="12" Cost="0.8047642" />
+  <Symbol Name="NZDCHF" Spread="10" Cost="0.8047642" />
+  <Symbol Name="USDMXN" Spread="61" Cost="0.09142481" />
+  <Symbol Name="IFX$" Spread="5" Cost="1" />
+  <Symbol Name="IFX$1" Spread="0" Cost="1" />
+  <Symbol Name="IFX$2" Spread="0" Cost="1" />
+</PipCost>

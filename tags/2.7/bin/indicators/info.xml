@@ -1,0 +1,1397 @@
+<Indicators LoadTime="04.02.2009 13:51:02">
+  <Indicator Name="Accelerator Oscillator" ShortName="AC" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="AC">
+      <Parameter Name="PeriodFast" Type="Integer" Visible="True" LangCapt="Fast period, Быстрый период">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="PeriodSlow" Type="Integer" Visible="True" LangCapt="Slow period, Медленный период">
+        <Options Min="1" Max="10000" Step="1" Value="34" />
+      </Parameter>
+      <Parameter Name="PeriodSmooth" Type="Integer" Visible="True" LangCapt="Smooth period, Период сглаживания">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="0" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Median" />
+      </Parameter>
+      <Parameter Name="ColorAC" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Accumulation/Distribution" ShortName="AD" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="AD">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="VectorVolume" Type="Vector" Visible="False" LangCapt="VectorVolume">
+        <Options Value="Volume" />
+      </Parameter>
+      <Parameter Name="ColorAD" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="ADX" ShortName="ADX" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="PDI">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="ColorPDI" Visible="True" LangCapt="+DI Color, Цвет +DI">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+    <Function Name="MDI">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="ColorMDI" Visible="True" LangCapt="-DI Color, Цвет -DI">
+        <Options Value="Color [BurlyWood]" />
+      </Parameter>
+    </Function>
+    <Function Name="ADX">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="ColorADX" Visible="True" LangCapt="DX Color, Цвет DX">
+        <Options Value="Color [RosyBrown]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Aroon Horn" ShortName="AroonHorn" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="AroonHornUp">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="ColorAHUp" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkBlue]" />
+      </Parameter>
+    </Function>
+    <Function Name="AroonHornDown">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="ColorAHDown" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkGreen]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="ASCTrend" ShortName="ASCTrend" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ASCTrend">
+      <Parameter Name="Open" Type="Vector" Visible="False" LangCapt="Open">
+        <Options Value="Open" />
+      </Parameter>
+      <Parameter Name="Low" Type="Vector" Visible="False" LangCapt="Low">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="High" Type="Vector" Visible="False" LangCapt="High">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="Close" Type="Vector" Visible="False" LangCapt="Close">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Average True Range" ShortName="ATR" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ATR">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="ColorATR" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Gold]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Awesome Oscillator" ShortName="AO" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="AO">
+      <Parameter Name="PeriodFastMA" Type="Integer" Visible="True" LangCapt="Fast MA, Быстрая МА">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="PeriodSlowMA" Type="Integer" Visible="True" LangCapt="Slow MA, Медленная МА">
+        <Options Min="1" Max="10000" Step="1" Value="34" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Median" />
+      </Parameter>
+      <Parameter Name="ColorAO" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Bears Power" ShortName="Bears" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="BearsPower">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorBearsPower" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DodgerBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Bill Williams Market Facilitation Index" ShortName="BWMFI" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="BWMFI">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorVolume" Type="Vector" Visible="False" LangCapt="VectorVolume">
+        <Options Value="Volume" />
+      </Parameter>
+      <Parameter Name="ColorBWMFI" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Indigo]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Bollinger Bands" ShortName="BB" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="TopBB">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="21" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="0" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Deviation" Type="Float" Visible="True" LangCapt="Deviation, Отклонение">
+        <Options Min="1" Max="10" Step="0,01" Point="2" Value="2" />
+      </Parameter>
+      <Parameter Name="ColorBB" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+    <Function Name="MiddleBB">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="21" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="0" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorBB" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+    <Function Name="BottomBB">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="21" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="0" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Deviation" Type="Float" Visible="True" LangCapt="Deviation, Отклонение">
+        <Options Min="1" Max="10" Step="0,01" Point="2" Value="2" />
+      </Parameter>
+      <Parameter Name="ColorBB" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="BullsPower" ShortName="Bulls" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="BullsPower">
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorBulls" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DodgerBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Close" ShortName="Close" Image="c.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Close">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorClose" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Khaki]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Commodity Channel Index" ShortName="CCI" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="CCI">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Typical" />
+      </Parameter>
+      <Parameter Name="ColorCCI" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Brown]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Cross" ShortName="Cross" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Cross">
+      <Parameter Name="SlowPeriod" Type="Integer" Visible="True" LangCapt="SlowPeriod">
+        <Options Min="1" Max="100000" Step="1" Value="20" />
+      </Parameter>
+      <Parameter Name="FastPeriod" Type="Integer" Visible="True" LangCapt="FastPeriod">
+        <Options Min="1" Max="100000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="High" Type="Vector" Visible="False" LangCapt="High">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="Low" Type="Vector" Visible="False" LangCapt="Low">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="ColorCross" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Brown]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="DayOfWeek" ShortName="DayOfWeek" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="DayOfWeek">
+      <Parameter Name="Week" Type="Enum" Visible="True" LangCapt="Day of Week, День недели">
+        <Options Values="Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday" Value="0" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="vectorTime" Type="Vector" Visible="False" LangCapt="vectorTime">
+        <Options Value="Time" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="DeMarker" ShortName="DeMarker" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="DeMarker">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="ColorDeMarker" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Brown]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Envelope" ShortName="Envelope" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="TopEnvelope">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="21" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Deviation" Type="Float" Visible="True" LangCapt="Deviation, Отклонение">
+        <Options Min="0,01" Max="100" Step="0,01" Point="2" Value="0,1" />
+      </Parameter>
+      <Parameter Name="ColorTopEnvelope" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkCyan]" />
+      </Parameter>
+    </Function>
+    <Function Name="MiddleEnvelope">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="21" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorMiddleEnvelope" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkCyan]" />
+      </Parameter>
+    </Function>
+    <Function Name="BottomEnvelope">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="21" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Deviation" Type="Float" Visible="True" LangCapt="Deviation, Отклонение">
+        <Options Min="0,01" Max="100" Step="0,01" Point="2" Value="0,1" />
+      </Parameter>
+      <Parameter Name="ColorBottomEnvelope" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkCyan]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="FATL" ShortName="FATL" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="FATL">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorFATL" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [BlueViolet]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Force Index" ShortName="FI" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="FI">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="0" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="VectorVolume" Type="Vector" Visible="False" LangCapt="VectorVolume">
+        <Options Value="Volume" />
+      </Parameter>
+      <Parameter Name="ColorFI" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Fractals" ShortName="Fractals" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="FractalUp">
+      <Parameter Name="High" Type="Vector" Visible="False" LangCapt="High">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="5" Max="100" Step="2" Value="5" />
+      </Parameter>
+      <Parameter Name="ColorUp" Visible="True" LangCapt="ColorUp">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+    <Function Name="FractalDown">
+      <Parameter Name="Low" Type="Vector" Visible="False" LangCapt="Low">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="5" Max="100" Step="2" Value="5" />
+      </Parameter>
+      <Parameter Name="ColorDown" Visible="True" LangCapt="ColorDown">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Gator Oscillator" ShortName="Gator" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ReGator">
+      <Parameter Name="RedLinePeriod" Type="Integer" Visible="True" LangCapt="Red Line Period (&quot;Teeth&quot;, Период красной линии (&quot;Зубы&quot;)">
+        <Options Min="1" Max="10000" Step="1" Value="8" />
+      </Parameter>
+      <Parameter Name="RedLineShift" Type="Integer" Visible="True" LangCapt="Red Line Shift (&quot;Teeth&quot;, Сдвиг красной линии (&quot;Зубы&quot;)">
+        <Options Min="-10000" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="3" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Median" />
+      </Parameter>
+      <Parameter Name="BlueLinePeriod" Type="Integer" Visible="True" LangCapt="Blue Line Period (&quot;Jaw&quot;, Период синей линии (&quot;Челюсти&quot;)">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="BlueLineShift" Type="Integer" Visible="True" LangCapt="Blue Line Shift (&quot;Jaw&quot;, Сдвиг синей линии (&quot;Челюсти&quot;)">
+        <Options Min="-10000" Max="10000" Step="1" Value="8" />
+      </Parameter>
+      <Parameter Name="ColorReGator" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+    <Function Name="Gator">
+      <Parameter Name="RedLinePeriod" Type="Integer" Visible="True" LangCapt="Red Line Period (&quot;Teeth&quot;, Период красной линии (&quot;Зубы&quot;)">
+        <Options Min="1" Max="10000" Step="1" Value="8" />
+      </Parameter>
+      <Parameter Name="RedLineShift" Type="Integer" Visible="True" LangCapt="Red Line Shift (&quot;Teeth&quot;, Сдвиг красной линии (&quot;Зубы&quot;)">
+        <Options Min="-10000" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="3" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Median" />
+      </Parameter>
+      <Parameter Name="GreenLinePeriod" Type="Integer" Visible="True" LangCapt="Green Line Period (&quot;Lips&quot;, Период зеленой линии (&quot;Губы&quot;)">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="GreenLineShift" Type="Integer" Visible="True" LangCapt="Green Line Shift (&quot;Lips&quot;, Сдвиг зеленой линии (&quot;Губы&quot;)">
+        <Options Min="-10000" Max="10000" Step="1" Value="3" />
+      </Parameter>
+      <Parameter Name="ColorGator" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="High" ShortName="High" Image="h.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="High">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorHigh" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [MediumBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Highest" ShortName="Highest" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Highest">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="100000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="ColorHighest" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkRed]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Ichimoku" ShortName="Ichimoku" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="IchimokuTenkan">
+      <Parameter Name="Tenkan" Type="Integer" Visible="True" LangCapt="Tenkan">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="Kijun" Type="Integer" Visible="True" LangCapt="Kijun">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="Senkou" Type="Integer" Visible="True" LangCapt="Senkou">
+        <Options Min="1" Max="10000" Step="1" Value="52" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorIchimokuTenkan" Visible="True" LangCapt="Color Tenkan, Цвет Tenkan">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+    <Function Name="IchimokuKijun">
+      <Parameter Name="Tenkan" Type="Integer" Visible="True" LangCapt="Tenkan">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="Kijun" Type="Integer" Visible="True" LangCapt="Kijun">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="Senkou" Type="Integer" Visible="True" LangCapt="Senkou">
+        <Options Min="1" Max="10000" Step="1" Value="52" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorIchimokuKijun" Visible="True" LangCapt="Color Kijun, Цвет Kijun">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+    <Function Name="IchimokuSpanA">
+      <Parameter Name="Tenkan" Type="Integer" Visible="True" LangCapt="Tenkan">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="Kijun" Type="Integer" Visible="True" LangCapt="Kijun">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="Senkou" Type="Integer" Visible="True" LangCapt="Senkou">
+        <Options Min="1" Max="10000" Step="1" Value="52" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorIchimokuSpanA" Visible="True" LangCapt="Color SpanA, Цвет SpanA">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+    <Function Name="IchimokuSpanB">
+      <Parameter Name="Tenkan" Type="Integer" Visible="True" LangCapt="Tenkan">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="Kijun" Type="Integer" Visible="True" LangCapt="Kijun">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="Senkou" Type="Integer" Visible="True" LangCapt="Senkou">
+        <Options Min="1" Max="10000" Step="1" Value="52" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorIchimokuSpanB" Visible="True" LangCapt="Color SpanB, Цвет SpanB">
+        <Options Value="Color [Brown]" />
+      </Parameter>
+    </Function>
+    <Function Name="IchimokuChinkou">
+      <Parameter Name="Tenkan" Type="Integer" Visible="True" LangCapt="Tenkan">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="Kijun" Type="Integer" Visible="True" LangCapt="Kijun">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="Senkou" Type="Integer" Visible="True" LangCapt="Senkou">
+        <Options Min="1" Max="10000" Step="1" Value="52" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorIchimokuChinkou" Visible="True" LangCapt="Color Chinkou, Цвет Chinkou">
+        <Options Value="Color [Brown]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="iTrend" ShortName="iTrend" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="iTrendDir">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="PeriodDir" Type="Integer" Visible="True" LangCapt="PeriodDir">
+        <Options Min="1" Max="10000" Step="1" Value="20" />
+      </Parameter>
+      <Parameter Name="Mode" Type="Enum" Visible="True" LangCapt="Mode">
+        <Options Values="Main, Bottom, Top" Value="0" />
+      </Parameter>
+      <Parameter Name="Deviation" Type="Float" Visible="True" LangCapt="Deviation, Отклонение">
+        <Options Min="1" Max="10" Step="0,01" Point="2" Value="2" />
+      </Parameter>
+      <Parameter Name="ColoriTrendDir" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+    <Function Name="iTrendPow">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="PeriodPow" Type="Integer" Visible="True" LangCapt="PeriodPow">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="ColoriTrendPow" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Juice" ShortName="Juice" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="JuiceUp">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period">
+        <Options Min="1" Max="10000" Step="1" Value="7" />
+      </Parameter>
+      <Parameter Name="Level" Type="Integer" Visible="True" LangCapt="Level (point)">
+        <Options Min="0" Max="100" Step="1" Value="4" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorJuiceUp" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Green]" />
+      </Parameter>
+    </Function>
+    <Function Name="JuiceDown">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period">
+        <Options Min="1" Max="10000" Step="1" Value="7" />
+      </Parameter>
+      <Parameter Name="Level" Type="Integer" Visible="True" LangCapt="Level (point)">
+        <Options Min="0" Max="100" Step="1" Value="4" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorJuiceDown" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkRed]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Laguerre" ShortName="Laguerre" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Laguerre">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Gamma" Type="Float" Visible="True" LangCapt="Gamma, Gamma">
+        <Options Min="0" Max="10" Step="0,1" Point="1" Value="0,7" />
+      </Parameter>
+      <Parameter Name="ColorLaguerre" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [ForestGreen]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Linear Regression" ShortName="LineReg" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="LineReg">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="20" />
+      </Parameter>
+      <Parameter Name="Color" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Low" ShortName="Low" Image="l.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Low">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorLow" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Gainsboro]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Lowest" ShortName="Lowest" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Lowest">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="100000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="ColorLowest" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DarkBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="MACD" ShortName="MACD" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="BaseMACD">
+      <Parameter Name="PeriodFastMA" Type="Integer" Visible="True" LangCapt="Fast MA, Быстрая МА">
+        <Options Min="1" Max="10000" Step="1" Value="12" />
+      </Parameter>
+      <Parameter Name="PeriodSlowMA" Type="Integer" Visible="True" LangCapt="Slow MA, Медленная МА">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorBaseMACD" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+    <Function Name="SignalMACD">
+      <Parameter Name="PeriodFastMA" Type="Integer" Visible="True" LangCapt="Fast MA, Быстрая МА">
+        <Options Min="1" Max="10000" Step="1" Value="12" />
+      </Parameter>
+      <Parameter Name="PeriodSlowMA" Type="Integer" Visible="True" LangCapt="Slow MA, Медленная МА">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="PeriodSignalMA" Type="Integer" Visible="True" LangCapt="Signal MA, Сигнальная МА">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="ColorSignalMACD" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Median (HL/2)" ShortName="Median" Image="m.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Median">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorMedian" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [OrangeRed]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Momentum" ShortName="Momentum" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Momentum">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="ColorMomentum" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Firebrick]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Money Flow Index" ShortName="MFI" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="MFI">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Typical" />
+      </Parameter>
+      <Parameter Name="VectorVolume" Type="Vector" Visible="False" LangCapt="VectorVolume">
+        <Options Value="Volume" />
+      </Parameter>
+      <Parameter Name="ColorMFI" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Chocolate]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Moving Average" ShortName="MA" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="MA">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorMA" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Red]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Moving Average of Oscillator" ShortName="MAO" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="MAO">
+      <Parameter Name="PeriodFastMA" Type="Integer" Visible="True" LangCapt="Fast MA, Быстрая МА">
+        <Options Min="1" Max="10000" Step="1" Value="12" />
+      </Parameter>
+      <Parameter Name="PeriodSlowMA" Type="Integer" Visible="True" LangCapt="Slow MA, Медленная МА">
+        <Options Min="1" Max="10000" Step="1" Value="26" />
+      </Parameter>
+      <Parameter Name="PeriodSmoothMA" Type="Integer" Visible="True" LangCapt="Smooth, Сглаживание">
+        <Options Min="1" Max="10000" Step="1" Value="9" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorMAO" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [ForestGreen]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Number" ShortName="Number" Image="n.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Number">
+      <Parameter Name="__NumberValue" Type="Integer" Visible="True" LangCapt="Value">
+        <Options Min="-10000000" Max="10000000" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorNumber" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Linen]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="On Balance Volume" ShortName="OBV" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="OBV">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="VectorVolume" Type="Vector" Visible="False" LangCapt="VectorVolume">
+        <Options Value="Volume" />
+      </Parameter>
+      <Parameter Name="ColorOBV" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [ForestGreen]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Open" ShortName="Open" Image="o.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Open">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorOpen" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Goldenrod]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Parabolic SAR" ShortName="SAR" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ParabolicSAR">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="Step" Type="Float" Visible="True" LangCapt="Step, Шаг">
+        <Options Min="0,001" Max="1" Step="0,001" Point="3" Value="0,001" />
+      </Parameter>
+      <Parameter Name="Max" Type="Float" Visible="True" LangCapt="Max, Максимум">
+        <Options Min="0,01" Max="1" Step="0,01" Point="2" Value="0,02" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="PeriodOfTime" ShortName="PeriodOfTime" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="PeriodOfTime">
+      <Parameter Name="Hour" Type="Integer" Visible="True" LangCapt="Hour, Час">
+        <Options Min="0" Max="23" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="Minute" Type="Integer" Visible="True" LangCapt="Minute, Минута">
+        <Options Min="0" Max="59" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="TPeriod" Type="Integer" Visible="True" LangCapt="Period (minute), Интервал (минута)">
+        <Options Min="1" Max="1440" Step="1" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="vectorTime" Type="Vector" Visible="False" LangCapt="vectorTime">
+        <Options Value="Time" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Point" ShortName="Point" Image="n.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Point">
+      <Parameter Name="Point" Type="Integer" Visible="True" LangCapt="Point">
+        <Options Min="-10000000" Max="10000000" Step="1" Value="1" />
+      </Parameter>
+      <Parameter Name="Digits" Type="Integer" Visible="True" LangCapt="Digits">
+        <Options Min="-1" Max="10" Step="1" Value="-1" />
+      </Parameter>
+      <Parameter Name="__Close" Type="Vector" Visible="False" LangCapt="__Close">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorPoint" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [RoyalBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="RFTL" ShortName="RFTL" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="RFTL">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorRFTL" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [GreenYellow]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="RSI" ShortName="RSI" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="RSI">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorRSI" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="RSTL" ShortName="RSTL" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="RSTL">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorRSTL" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Gold]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="SATL" ShortName="SATL" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="SATL">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorSATL" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DeepSkyBlue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Standard Deviation" ShortName="StdDev" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="StdDev">
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+      <Parameter Name="ColorStdDev" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [GreenYellow]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Stochastic" ShortName="Stochastic" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="StochK">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="DelayK" Type="Integer" Visible="True" LangCapt="Delay K, Замедление K">
+        <Options Min="1" Max="10000" Step="1" Value="3" />
+      </Parameter>
+      <Parameter Name="ColorStochK" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [ForestGreen]" />
+      </Parameter>
+    </Function>
+    <Function Name="StochD">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__MAType" Type="Enum" Visible="True" LangCapt="Type, Тип">
+        <Options Values="Simple, Exponential, Linear Weighted, Smoothed" Value="1" />
+      </Parameter>
+      <Parameter Name="DelayK" Type="Integer" Visible="True" LangCapt="Delay K, Замедление K">
+        <Options Min="1" Max="10000" Step="1" Value="3" />
+      </Parameter>
+      <Parameter Name="DelayD" Type="Integer" Visible="True" LangCapt="Delay D, Замедление D">
+        <Options Min="1" Max="10000" Step="1" Value="3" />
+      </Parameter>
+      <Parameter Name="ColorStochD" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [GreenYellow]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="T3_Trix" ShortName="T3_Trix" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Trix">
+      <Parameter Name="AT3Period" Type="Integer" Visible="True" LangCapt="AT3Period">
+        <Options Min="1" Max="10000" Step="1" Value="18" />
+      </Parameter>
+      <Parameter Name="Hot" Type="Float" Visible="True" LangCapt="Hot">
+        <Options Min="-1E+07" Max="1E+08" Step="0,01" Point="2" Value="0,7" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="ColorTrix" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [DeepSkyBlue]" />
+      </Parameter>
+    </Function>
+    <Function Name="TrixB">
+      <Parameter Name="AT3Period" Type="Integer" Visible="True" LangCapt="AT3Period">
+        <Options Min="1" Max="10000" Step="1" Value="18" />
+      </Parameter>
+      <Parameter Name="Hot" Type="Float" Visible="True" LangCapt="Hot">
+        <Options Min="-1E+07" Max="1E+08" Step="0,01" Point="2" Value="0,7" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="BT3Period" Type="Integer" Visible="True" LangCapt="BT3Period">
+        <Options Min="1" Max="10000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="ColorTrixB" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Blue]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="TriggerLine" ShortName="TriggerLine" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="TriggerLineSell">
+      <Parameter Name="RPeriod" Type="Integer" Visible="True" LangCapt="RPeriod">
+        <Options Min="1" Max="100000" Step="1" Value="30" />
+      </Parameter>
+      <Parameter Name="LSMA_Period" Type="Integer" Visible="True" LangCapt="LSMA_Period">
+        <Options Min="1" Max="100000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+    <Function Name="TriggerLineBuy">
+      <Parameter Name="RPeriod" Type="Integer" Visible="True" LangCapt="RPeriod">
+        <Options Min="1" Max="100000" Step="1" Value="30" />
+      </Parameter>
+      <Parameter Name="LSMA_Period" Type="Integer" Visible="True" LangCapt="LSMA_Period">
+        <Options Min="1" Max="100000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Typical (HLC/3)" ShortName="Typical" Image="t.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Typical">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorTypical" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Salmon]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="ValueOfTime" ShortName="ValueOfTime" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ValueOfTime">
+      <Parameter Name="Hour" Type="Integer" Visible="True" LangCapt="Hour, Час">
+        <Options Min="0" Max="23" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="Minute" Type="Integer" Visible="True" LangCapt="Minute, Минута">
+        <Options Min="0" Max="59" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="TPeriod" Type="Integer" Visible="True" LangCapt="Period (minute), Интервал (минута)">
+        <Options Min="1" Max="1440" Step="1" Value="1" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="vectorTime" Type="Vector" Visible="False" LangCapt="vectorTime">
+        <Options Value="Time" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Volume" ShortName="Volume" Image="v.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Volume">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorVolume" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Violet]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Weighted (HLCC/4)" ShortName="Weighted" Image="w.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="Weighted">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+      <Parameter Name="ColorWeighted" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [Snow]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="Williams Percent Range" ShortName="WPR" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="WPR">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="ColoriWPR" Visible="True" LangCapt="Color, Цвет">
+        <Options Value="Color [ForestGreen]" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="ZigZag (Ensign)" ShortName="ZZEnsign" Image="i.gif">
+    <Copyright>Copyright © 2007, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ZZEnsign">
+      <Parameter Name="Bars" Type="Integer" Visible="True" LangCapt="Bars">
+        <Options Min="1" Max="10000" Step="1" Value="12" />
+      </Parameter>
+      <Parameter Name="Size" Type="Integer" Visible="True" LangCapt="Size">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="Low" Type="Vector" Visible="False" LangCapt="Low">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="High" Type="Vector" Visible="False" LangCapt="High">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="vectorTime" Type="Vector" Visible="False" LangCapt="vectorTime">
+        <Options Value="Time" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <Indicator Name="ZigZag" ShortName="ZigZag" Image="i.gif">
+    <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
+    <Function Name="ZigZag">
+      <Parameter Name="Depth" Type="Integer" Visible="True" LangCapt="Depth">
+        <Options Min="1" Max="10000" Step="1" Value="12" />
+      </Parameter>
+      <Parameter Name="Deviation" Type="Integer" Visible="True" LangCapt="Deviation">
+        <Options Min="1" Max="10000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="Backstep" Type="Integer" Visible="True" LangCapt="Backstep">
+        <Options Min="1" Max="10000" Step="1" Value="3" />
+      </Parameter>
+      <Parameter Name="Low" Type="Vector" Visible="False" LangCapt="Low">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="High" Type="Vector" Visible="False" LangCapt="High">
+        <Options Value="High" />
+      </Parameter>
+    </Function>
+  </Indicator>
+  <FreeFunction>
+    <Function Name="add" />
+    <Function Name="sub" />
+    <Function Name="mul" />
+    <Function Name="smul" />
+    <Function Name="div" />
+    <Function Name="abs" />
+    <Function Name="Time">
+      <Parameter Name="__TimeFrame" Type="Integer" Visible="False" LangCapt="__TimeFrame">
+        <Options Min="-2147483648" Max="2147483647" Step="1" Value="0" />
+      </Parameter>
+    </Function>
+    <Function Name="switch" />
+    <Function Name="LowestIndex">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="100000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Low" />
+      </Parameter>
+    </Function>
+    <Function Name="HighestIndex">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="100000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="High" />
+      </Parameter>
+    </Function>
+    <Function Name="__AroonHorn" />
+    <Function Name="MSDI">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+    <Function Name="PSDI">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+    <Function Name="DX">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="10000" Step="1" Value="13" />
+      </Parameter>
+    </Function>
+    <Function Name="DeMax" />
+    <Function Name="DeMin" />
+    <Function Name="TR">
+      <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
+        <Options Value="Low" />
+      </Parameter>
+      <Parameter Name="VectorHigh" Type="Vector" Visible="False" LangCapt="VectorHigh">
+        <Options Value="High" />
+      </Parameter>
+      <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+    <Function Name="TriggerLine">
+      <Parameter Name="RPeriod" Type="Integer" Visible="True" LangCapt="RPeriod">
+        <Options Min="1" Max="100000" Step="1" Value="30" />
+      </Parameter>
+      <Parameter Name="LSMA_Period" Type="Integer" Visible="True" LangCapt="LSMA_Period">
+        <Options Min="1" Max="100000" Step="1" Value="5" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+    <Function Name="RawFI" />
+    <Function Name="Juice">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period">
+        <Options Min="1" Max="10000" Step="1" Value="7" />
+      </Parameter>
+      <Parameter Name="Level" Type="Integer" Visible="True" LangCapt="Level (point)">
+        <Options Min="0" Max="100" Step="1" Value="4" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+  </FreeFunction>
+</Indicators>

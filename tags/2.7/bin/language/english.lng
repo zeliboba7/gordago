@@ -1,0 +1,541 @@
+English|English|36
+.1|MessageBox|11
+	1|Files of the quotes are absent. Choose menu item "Service"->"Quotes source" and choose the necessary quotes source. If you choose "Forex Optimizer", you will need to choose menu item "Service"->"Download quotes" and download all the necessary quotes from our server
+	3|Select Strategy
+	4|Attention! \nFor backtest in demo-version will be used history for 14 days only. \nYou can register it via Menu item "Help"->"Register"
+	5|There are not enough quotes for test
+	6|Error: can't import the quotes
+	7|Optimum strategy is created on the basis of optimization results. \nYou have chosen not optimized strategy. Please, start optimization
+	8|Attention! \nExport to MQL4 not accessible in demo-version. \nYou can register in Menu item "Help"->"Register"
+	9|Attention!\nYou are try to export the strategy using indicators, which, possible, is absent in your MetaTrader4. If it is really so, it is necessary to export these indicators along with strategy, otherwise it will not work in MT. Put the marks opposite that indicator, which not there or can be not there. If you already exported these indicators, these marks are not needed. Nothing terrible if you put the mark on existing indicator - it simply copy anew. Do not forget about need of the compiling exported indicator by MetaEditor. When compiling indicator or expert advisor do not forget to do small change to code, for instance, put the "Space" in any place of the text (do not spoil code, however!) - otherwise they are will not compiled
+	10|Attention! \nThe virtual server in demo-version works no more than 3 minutes. \nYou can register it via Menu item "Help"->"Register"
+.2|mniFile|10
+	1|File
+	2|New
+	3|Open...
+	4|Save
+	5|Save as...
+	6|Close
+	7|Exit
+	8|Export to MQL4
+	9|Create Advisor
+.3|mniView|17
+	1|View
+	2|Symbols
+	3|Tools
+	4|Timeframe
+	5|Control panel
+	6|Increase +
+	7|Decrease -
+	8|Grid
+	9|Remove all indicators
+	10|Terminal
+	11|Tester
+	12|Standard
+	13|Charts
+	14|Line Studies
+	15|Periodicity
+	16|Toolbars
+.4|mniService|3
+	1|Service
+	2|Update...
+.5|mniWindow|5
+	1|Window
+	2|Cascade
+	3|Tile Horizontally
+	4|Tile Vertically
+.6|mniHelp|5
+	1|Help
+	2|About...
+	3|Register
+	4|Ask a Question
+.7|TesterPanel|23
+	1|Tester
+	2|History
+	3|From:
+	4|To:
+	5|Spread
+	6|Swap (Buy, Sell)
+	7|Start
+	8|Stop
+	9|Process
+	10|History
+	11|Combinations
+	12|Result
+	13|Report
+	14|Deals
+	15|Strategy
+	16|Pause
+	17|Continue
+	18|Step
+	19|Quotes source
+	20|Use 1-minute history for test instead ticks
+	21|To use the data
+	22|Balance
+.9|IndicatorPanel|8
+	1|Indicators
+	2|Price
+	3|Insert
+	4|Common parameters
+	5|Shift
+	6|Bars back
+	7|Cancel
+.10|Strategy|27
+	1|Strategy
+	2|Sell
+	3|Buy
+	4|Entry
+	5|Exit
+	6|Variant
+	7|Stop
+	8|Limit
+	9|Trailing Stop
+	10|NN
+	11|OK
+	12|TFrame
+	13|Condition
+	14|Add Variant
+	15|Delete Variant
+	16|Save changes to strategy
+	17|Additional
+	18|Name
+	19|Description
+	20|Sound
+	21|Play
+	22|PO Buy
+	23|PO Sell
+	24|Price
+	25|Create or Modify
+	26|Delete
+.11|DefaulFileName|2
+	1|Strategy
+.13|TesterMessage|11
+	1|Select Symbol
+	2|The range of parameters has been entered,\non-line use of the given strategy is impossible.
+	3|This button is inaccessible in the demo-version.\nIt allows to create optimum strategy, \nbased on result of optimization. \nYou can register it in Menu item "Help"->"Register"
+	4|The range of parameters has been entered,\non-line use of the given strategy is impossible.
+	5|Select Strategy
+	6|Enter Long
+	7|Exit Long
+	8|Enter Short
+	9|Exit Short
+	10|There is no 1-minute history for %%symbol%%
+.14|Server|9
+	1|Username
+	2|Server
+	3|Password
+	4|Error in fields of the form
+	5|Error in field "Server"
+	6|Connecting error: server not found
+	7|Error in field "Username"
+	8|Can't access: username or password are wrong
+.16|TestReport|64
+	1|Optimum Strategy
+	2|Initial Data
+	3|Symbol
+	4|Start time
+	5|End time
+	6|Bars quantity
+	7|General:
+	8|Trades quantity
+	9|Profitable trades quantity
+	10|Net profit
+	11|Spread charges
+	12|Swap profit
+	13|Extreme parameters (for one trade):
+	14|Max profit
+	15|Min profit
+	16|Average profit
+	17|Max loss
+	18|Min loss
+	19|Average loss
+	20|Report
+	21|Buy
+	22|Sell
+	23|Total
+	24|Max Draw Down
+	25|Common
+	26|Detail
+	27|Buy
+	28|Sell
+	29|Entry Time
+	30|Time
+	31|Price
+	32|Exit Time
+	33|Time
+	34|Price
+	35|Profit
+	36|Draw Down
+	37|Exit Cause
+	38|Grow Up
+	39|Max Grow Up
+	40|TS
+	41|TP
+	42|Condition
+	43|Save
+	44|Exit Buy
+	45|Exit Sell
+	46|History
+	47|Filter
+	48|Result
+	49|NN
+	50|Time
+	51|Type
+	52|Trade
+	53|Order
+	54|Lots
+	55|Price
+	56|Stop
+	57|Limit
+	58|Profit
+	59|Balance
+	60|Journal
+	61|Maximum Price
+	62|Minimum Price
+	63|Used time
+.18|SymbolPanel|13
+	1|Symbol
+	2|Bid
+	3|Ask
+	4|Pip cost
+	5|Spread
+	6|Chart window
+	7|Trade
+	8|History
+	9|Hide
+	10|Show
+	11|Show All
+	12|Hide All
+.19|UpdateApplic|22
+	1|Start
+	2|Cancel
+	3|Updates search...
+	4|Download...
+	5|Error: can't receive file of version
+	6|There is no available updates
+	7|Error: can't load update
+	8|Updates has been loaded successfully. Please restart Gordago Forex Optimizer
+	9|Close
+	10|Username
+	11|Password
+	12|Registered version
+	13|Error on the server
+	14|Error: can't log in
+	15|Attention! If you not enter username and password the program will update till demo-version
+	17|Save username and password
+	18|To check updating at start of the program
+	19|Update program
+	20|It is necessary to update the current version
+	21|To get Username and Password
+.20|About|4
+	1|If you have wishes to developers or you have found out an error, please e-mail to the address:
+	2|Notice: this computer program is protected by copyright laws and international treaties. Unauthorized reproduction or distribution of this program or any portion of it, may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
+	3|About...
+.21|FirstStart|6
+	1|Welcome!
+	2|Not show any more
+	3|Whereas the program is constantly updated, we recommend to check up presence of the new version right now
+	4|Update
+	5|Cancel
+.22|PollForm|10
+	1|Before you exit, please send a message about this program to the developers. Mention any wishes, questions, or your opinion about Gordago Forex Optimizer, including the functions you consider most necessary. This information is extremely valuable to us. If you want to receive our answer, please specify your email address. Thank you very much
+	2|To not show any more
+	3|Send
+	4|Cancel
+	5|You can send the message about this program to developers here. Write any wishes, questions, your opinion about Gordago Forex Optimizer, what functions are necessary first of all. This information have an extremely value for us. If you want to receive our answer, please specify your e-mail. Thanks you very much
+	6|Message sent! Thanks you very much!
+	7|Can't send message. Probably there is no connection with the Internet
+	8|Send the message to developers
+	9|If you want to receive an our answer, write your e-mail please:
+.23|BarServer|19
+	1|Downloading history
+	2|Download history
+	3|Error of receiving information about quotes
+	4|Files on server
+	6|Symbol
+	7|Size
+	8|File
+	9|From
+	10|To
+	11|Attention! All quotes divided on months. Quotes, which are already downloaded, marked by green color
+	12|Select all
+	13|Look all that there are on the server
+	14|Download
+	15|Close
+	16|Quotes downloaded successfully
+	17|Error of downloading file
+	18|Unselect all
+.24|Registrate|6
+	1|This program was given for you in demonstration purpose. It is registered version analogue, but since duration 15 day
+	2|If you want to use Gordago Forex Optimizer hereinafter, please, find time for register it. If you do not want to use the program anymore, please delete all its copies upon the terms, stipulated by License agreement
+	3|Exit
+	4|OK
+	5|Register now
+.25|ExportMT4|16
+	1|Attach to account №
+	2|Alert sound
+	3|Create
+	4|Cancel
+	5|Use expert advisor in specifyed time only:
+	6|Start time
+	7|Stop time
+	8|Lots
+	9|Slippage
+	10|Fasten advisor to deals
+	11|MAGIC number
+	12|New MAGIC
+	13|MT's iTrend indicator can't be used in EA. So, strategy with iTrend can't be convert to MT
+	14|Pattern
+	15|Pattern file not found!
+.26|Tools|14
+	1|Settings
+	2|Connection
+	3|Use Proxy server
+	4|Proxy...
+	5|Use this settings if your computer connect with internet via local network, where firewalls and proxy servers with access limits
+	6|Server:
+	7|Username:
+	8|Password:
+	9|Cancel
+	10|Test
+	11|OK
+	12|Cancel
+	13|Port:
+.28|StrategyOperate|19
+	1|StrategyOperate
+	2|List
+	3|File name
+	4|Path
+	5|Add
+	6|Remove
+	7|Edit
+	8|Use
+	9|Strategy
+	10|Symbol
+	11|Lots
+	12|S
+	13|C
+	14|Trades Confirmation
+	15|Start
+	16|Stop
+	17|Downloading history...
+	18|Start history downloading...
+.29|Setting|28
+	1|History
+	2|Whole history
+	3|Last month
+	4|Last 3 months
+	5|Last 6 months
+	6|Last 9 months
+	7|Last year
+	8|For working use history:
+	9|Period
+	10|Timeframe
+	11|Timeframes:
+	12|Enter new timeframe in seconds
+	13|Add
+	14|Remove timeframe
+	15|Use as default
+	16|Changes will accepted after restart program.\nProgram uses only minimal timeframe and creates all timeframes from it.\nSo, if you delete "small-sized" timeframes, the programm will work faster.\nAnyway, you can add any timeframe when you want.
+	17|Chart
+	18|Proxy
+	19|HTTP Proxy Settings
+	20|Get settings from Internet Explorer
+	21|To establish settings manually
+	22|Server:
+	23|Port:
+	24|User Name:
+	25|Password:
+	26|Name
+	27|Second
+.30|Terminal|113
+	1|Terminal
+	2|Accounts
+	3|Trades
+	4|Orders
+	5|Operate
+	6|Strategy
+	7|Buy
+	8|Sell
+	9|Modify
+	10|Delete
+	11|Close
+	12|Type
+	13|Balance
+	14|Capital
+	15|Used Margin
+	16|Free Margin
+	17|Premium
+	18|Commission
+	19|Fee
+	20|Net ALL
+	21|Account
+	22|Trade
+	23|Symbol
+	24|Amount
+	25|B/S
+	26|Rate
+	27|Rate
+	28|Stop
+	29|Limit
+	30|Trail
+	31|Pips profit
+	32|Net price
+	33|Time
+	34|Type
+	35|Order
+	36|Lots
+	37|Slippage
+	38|Rate
+	39|Depend
+	40|Init
+	41|Reject Init
+	42|Close
+	43|Reject Close
+	44|Entry Stop
+	45|Entry Limit
+	46|Stop
+	47|Limit
+	48|Margin
+	49|MinEquity
+	50|Init Failed
+	51|Enrtry Failed
+	52|Stop Failed
+	53|Limit Failed
+	54|Symbol
+	55|Bid
+	56|Ask
+	57|Add
+	58|Delete
+	59|Sell
+	60|Buy
+	61|Sell Preview
+	62|Buy Preview
+	63|Pending Order
+	64|Lots
+	65|Slippage
+	66|Stop
+	67|Limit
+	68|Rate
+	69|Non order
+	70|Limit order
+	71|Stop order
+	72|Connection failed
+	73|Connection with server...
+	74|Connection OK
+	75|Load data...
+	76|Waiting for connection with server...
+	77|Server connection error: {0}
+	78|Load data {0} from server...
+	79|Data {0} from server loaded successful
+	80|Loading data {0} from server {1} error
+	81|Change pending order...
+	82|Pending order was changed successful
+	83|Changing pending order error: {0}
+	84|Changing Stop and Limit of pending order...
+	85|Stop and Limit of pending order was changed successful
+	86|Changing Stop and Limit of pending order error: {0}
+	87|Changing Stop and Limit of order...
+	88|Stop and Limit of order was changed successful
+	89|Changing Stop and Limit of order error: {0}
+	90|Close order request...
+	91|Request for close order successful
+	92|Close order request error: {0}
+	93|Creating pending order...
+	94|Pending order was created successful
+	95|Pending order creating error: {0}
+	96|Delete pending order...
+	97|Pending order was deleted successful
+	98|Pending order delete error: {0}
+	99|Request for create order...
+	100|Request for create order was successful
+	101|Request for create order error: {0}
+	102|Request confirm order (price was changed since previous request)...
+	103|Request confirm order (price was changed since previous request) was successful
+	104|Request confirm order (price was changed since previous request) error: {0}
+	105|Operation is not possible. The account {0} is not active.
+	106|History
+	107|Journal
+	108|Date
+	109|Time
+	110|Message
+	111|Open Time
+	112|Close Time
+.31|ConnectForm|23
+	1|Connect
+	2|User Name
+	3|Password:
+	4|Account Type:
+	5|Connect
+	6|Work offline
+	7|Settings
+	8|Open new account
+	9|Connect ...
+	10|Disconnect
+	11|To show at startup
+	12|Server of the Broker
+	13|Virtual server
+	14|Start a Virtual Server
+	15|Deposit
+	16|Commission
+	17|Lot Size
+	18|Leverage
+	19|Use data
+	20|Settings
+	21|Date started
+	22|To use all Symbols
+.32|Charts|35
+	1|Chart
+	2|Candlestick
+	3|Bar Chart
+	4|Line Chart
+	5|Auto Scroll
+	6|Chart Shift
+	7|Grid
+	8|Zoom In
+	9|Zoom Out
+	10|Time Frame
+	11|Remove Indicator:
+	12|Remove all indicators
+	13|Remove all objects
+	14|Cursor
+	15|Crosshair
+	16|Vertical Line
+	17|Horizontal Line
+	18|Trendline
+	19|Fibonacci Retracement
+	20|Fibonacci Fan
+	21|Please wait...\nCaching of the data
+	22|Template
+	23|Save template ...
+	24|Load template ...
+	25|Remove template
+	26|Cycle lines
+	27|Fibonacci Time Zones
+	28|Save As Report...
+	29|Save As Picture...
+	30|Tick Chart
+	31|Panels
+	32|Symbols
+	33|Trade
+	34|Period Separators
+.33|TerminalPanel|12
+	1|Sell
+	2|Buy
+	3|Lots
+	4|One Click
+	5|All
+	6|Slippage
+	7|Pending order
+	8|Stop
+	9|Limit
+	10|OK
+	11|Cancel
+.34|ReportForm|4
+	1|Report
+	2|Save As...
+	3|Close
+.35|Menu -> Server|4
+	1|Server
+	2|Pause
+	3|Speed
