@@ -1,0 +1,160 @@
+Вопрос  
+Как сделать не модальную форму, которая бы все время отображалась поверх "родительской" 
+Такие окна могут использоваться в качестве окон поиска/замены/... 
+
+Ответ  
+Для этого существует свойство Form.Owner(или метод Form.AddOwnedForm ):
+
+using System.Windows.Forms;
+class DemoForm: Form
+{
+  public DemoForm()
+  {
+    Text = "Main Form";
+    Form searchForm = new Form();
+    searchForm.Owner = this;
+    searchForm.Show();
+    searchForm.Text = "Form Search";
+  }
+  static void Main()
+  {
+    Application.Run(new DemoForm());
+  }
+}
+********************************************************************************************************************* 
+
+Вопрос  
+
+Как встроить форму в другую форму? 
+
+Ответ  
+
+У встраиваемой формы выставьте свойство Form.TopLevel в false и добавьте эту форму в коллекцию Controls родительской формы:
+
+using System;
+using System.Windows.Forms;
+using System.Drawing;
+class MainForm: Form
+{
+    public MainForm()
+    {
+        EmbeddedForm embeddedForm = new EmbeddedForm();
+        embeddedForm.TopLevel = false;
+        //Закомментируйте следующую строку, чтобы форма была с бордером
+        embeddedForm.FormBorderStyle = FormBorderStyle.None;
+        embeddedForm.Parent = this;
+        embeddedForm.Show();
+    }
+    static void Main()
+    {
+        Application.Run(new MainForm());
+    }
+}
+class EmbeddedForm: Form
+{
+    public EmbeddedForm()
+    {
+        BackColor = Color.Green;
+        Controls.Add(new TextBox());
+    }
+    protected override Size DefaultSize
+    {
+        get
+        {
+            return new Size(100, 100);
+        }
+    }
+}
+ 
+********************************************************************************************************************* 
+Вопрос  
+
+В какой момент (кроме конструктора) можно изменить положение формы, чтобы при этом отсутствовало видимое ее перемещение при отображении? Пробовал Load, но в нем явно видно, что форма рисуется сначала в одном месте, затем перемещается в другое. 
+
+Ответ  
+
+Сразу после создания окна, в ответ на сообщение WM_CREATE, вызывается метод OnHandleCreated и возникает соответствующее событие HandleCreated - их и можно использовать в данной ситуации. Например, переопределив в классе наследнике OnHandleCreated() или подписавшись на событие HandleCreated.  
+ 
+
+********************************************************************************************************************* 
+ Вопрос  
+Как правильно использовать объекты MS Office? 
+Почему при попытке использования объектов MS Office возникает ошибка "Old format or invalid type library"? 
+
+Ответ  
+Это известный уже лет сто баг, то ли в Interop Assemblies, то ли в самом офисе. Обходной маневр такой: надо культуру текущего потока переключить на английскую. А после использования объектов офиса - не забыть вернуть на место: 
+
+CultureInfo oldCulture = Thread.CurrentThread.CurrentCulture; 
+Thread.CurrentThread.CurrentCulture = new CultureInfo( "en-US" ); 
+try
+{
+    // Тут вызываем методы офиса  
+}
+finally
+{
+Thread.CurrentThread.CurrentCulture = oldCulture; 
+}
+ 
+********************************************************************************************************************* 
+Вопрос  
+
+Как открыть файл для чтения одновременно из нескольких программ? 
+Я пытаюсь открыть файл только для чтения FileInfo.OpenRead(), но оказывается, что даже в таком режиме он недоступен из других процессов, то есть нельзя открыть один файл одновременно из нескольких процессов даже только для чтения. Можно ли это сделать и как? 
+
+Ответ  
+Режим "чтение-запись" и блокировка - разные вещи. Можно открыть файл только для чтения, но при этом заблокировать к нему доступ из других программ. А можно даже наоборот.
+
+Чтобы указать режим блокировки доступа, существует специальное перечисление FileShare: 
+
+FileInfo fileInfo;
+FileStream s = fileInfo.Open( FileMode.Open, FileAccess.Read, FileShare.Read );
+// Другие могут открывать этот файл на чтение
+ 
+FileStream s = fileInfo.Open( FileMode.Open, FileAccess.Read, FileShare.ReadWrite );
+// Другие могут открывать этот файл на чтение и запись
+ 
+FileStream s = fileInfo.Open( FileMode.Open, FileAccess.Read, FileShare.Write ); 
+// Другие могут открывать этот файл на запись
+ 
+********************************************************************************************************************* 
+ Вопрос  
+
+Как проверить, запущена ли уже копия моей программы? 
+Как проверить, не запущена ли уже программа, и если запущена, то закрыть вторую копию? Т.е. чтобы в данный момент работала только одна копия программы. 
+
+Ответ  
+
+Общий подход такой: в приложении создаем любой именованный объект ядра (например Mutex), доступ к которому можно получить из любого процесса в Windows по его имени, например. Причем при создании такого объекта можно определить действительно-ли он был создан только-что вызванной функцией или мы уже имеем дело с ранее созданным экземпляром. Так вот - если это новый экземпляр Mutex?a - значит и экземпляр данного приложения еще не запущен ну и наоборот. В .NET Win32 Mutex?ы представлены классом System.Threading.Mutex. 
+
+Ниже пример как проверять наличие уже запущенных экземпляров приложений по вышеизложенной методике: 
+
+ 
+
+class MyApplication 
+{ 
+    public static void Main() 
+    { 
+        if ( InstanceExists() )
+        { 
+            return; 
+        }
+        Console.WriteLine( "Application is running: Press enter to exit" );
+        Console.ReadLine();
+    } 
+    static Mutex mutex;
+    static bool InstanceExists() 
+    { 
+        bool createdNew; 
+        mutex = new Mutex( false, "My Mutex Name", out createdNew ); 
+        return !createdNew;
+    } 
+}
+ 
+ 
+
+
+
+ 
+
+
+
