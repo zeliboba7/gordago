@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCursitLibrary", "TestCursitLibrary.csproj", "{DDAB8C9D-301B-4E17-A179-24930D74C86D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cursit", "..\Cursit.csproj", "{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DDAB8C9D-301B-4E17-A179-24930D74C86D}.Debug.ActiveCfg = Debug|.NET
+		{DDAB8C9D-301B-4E17-A179-24930D74C86D}.Debug.Build.0 = Debug|.NET
+		{DDAB8C9D-301B-4E17-A179-24930D74C86D}.Release.ActiveCfg = Release|.NET
+		{DDAB8C9D-301B-4E17-A179-24930D74C86D}.Release.Build.0 = Release|.NET
+		{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}.Debug.ActiveCfg = Debug|.NET
+		{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}.Debug.Build.0 = Debug|.NET
+		{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}.Release.ActiveCfg = Release|.NET
+		{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
