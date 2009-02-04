@@ -1,0 +1,394 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64DB6D1E-D6BF-495F-A0A3-043BBCF9EAF2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>cursit</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cursit</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <BaseIntermediateOutputPath>..\..\obj\cursit\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>None</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEMO</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>None</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEMO_DEBUG|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEMO</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DEBUG_C|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>Full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>False</Optimize>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <NoStdLib>False</NoStdLib>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <FileAlignment>4096</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applic\AConfig\Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\AConfig\ConfigValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\AGUI\AButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\AGUI\AButton3Point.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\AGUI\AButtonUpDownDomain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\AGUI\AColorDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\AGUI\AComboBoxUniversal\AComboBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\AGUI\Primitive\AButtonPrimitive.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueArrString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueFloat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueMulti.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValuePeriod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridValueType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerArrString.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerMulti.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerPeriod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerPrimitive.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\PropGridViewerText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PGridValue\TextBoxViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PropGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PropGridFormMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PropGridFormPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PropGridRow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PropGridRowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Applic\APropGrid\PropGridRowPrimitive.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelExt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft\Office\Excel.cs" />
+    <Compile Include="Microsoft\Office\ExcelWorkbook.cs" />
+    <Compile Include="Microsoft\Office\ExcelWorkbooks.cs" />
+    <Compile Include="Microsoft\Office\ExcelWorksheet.cs" />
+    <Compile Include="Microsoft\Office\ExcelWorksheets.cs" />
+    <Compile Include="Microsoft\Office\OfficeError.cs" />
+    <Compile Include="PanelExt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\HTMLReport.cs" />
+    <Compile Include="TabControlExt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LangGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LanguageData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LangValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProcessMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableCellLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableCellStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableColumnCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableColumnType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Table\TableRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\TableRowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tab\TabLineHorizont.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tab\TTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab\TTabControl.Designer.cs">
+      <DependentUpon>TTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Text\Decoder866.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\Encoder866.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\Encoding866.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\StringCreater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnRarLib\UnRar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnRarLib\UnrarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\DateTimeEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\FileEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\FloatInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ImageEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Password.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\TextChartInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewOpenWindows.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewOpenWindows.designer.cs">
+      <DependentUpon>ViewOpenWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32API.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Applic\APropGrid\PGridValue\PropGridViewerPrimitive.resx">
+      <DependentUpon>PropGridViewerPrimitive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applic\APropGrid\PropGrid.resx">
+      <DependentUpon>PropGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applic\APropGrid\PropGridFormMulti.resx">
+      <DependentUpon>PropGridFormMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applic\APropGrid\PropGridFormPeriod.resx">
+      <DependentUpon>PropGridFormPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applic\APropGrid\PropGridRowPrimitive.resx">
+      <DependentUpon>PropGridRowPrimitive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table\TableControl.resx">
+      <DependentUpon>TableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab\TTabControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnRarLib\UnrarForm.resx">
+      <DependentUpon>UnrarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOpenWindows.resx">
+      <DependentUpon>ViewOpenWindows.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
