@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Toolbox version="1.0" Type="Indic">
+	<Indicator Name="HMA" DrawChart="Main" Icon="i.gif">
+		<Parameter Name="Apply to" Visible="Never" Type="Vector" Values="Close">Close</Parameter>
+		<Parameter Name="Period" Type="Integer" Min="1" Max="10000">20</Parameter>
+		<Function Name="HMA" ShortName="HMA" Type="Gordago.StockOptimizer2.Toolbox.HMA"></Function>
+	</Indicator>
+</Toolbox>

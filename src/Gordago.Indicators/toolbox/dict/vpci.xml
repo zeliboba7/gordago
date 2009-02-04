@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Toolbox version="1.0" Type="Indic">
+	<Indicator Name="VPCI" DrawChart="New" Icon="i.gif">
+		<Parameter Name="VPC period" Type="Integer" Min="1" Max="10000">50</Parameter>
+		<Parameter Name="VPR period" Type="Integer" Min="1" Max="10000">10</Parameter>
+		<Parameter Name="Short-term VM period" Type="Integer" Min="1" Max="10000">10</Parameter>
+		<Parameter Name="Long-term VM period" Type="Integer" Min="1" Max="10000">50</Parameter>
+		<Parameter Name="Close" Visible="Never" Type="Vector">Close</Parameter>
+		<Parameter Name="Volume" Visible="Never" Type="Vector">Volume</Parameter>
+		<Function Name="VPCI" ShortName="VPCI" Type="Gordago.StockOptimizer2.Toolbox.VPCI"></Function>
+		<Function Name="SMMA VPCI" ShortName="SMMAVPCI" Type="Gordago.StockOptimizer2.Toolbox.SMMAVPCI">
+			<Parameter Name="SMMA period" Type="Integer" Min="1" Max="10000">40</Parameter>
+		</Function>
+	</Indicator>
+</Toolbox>
