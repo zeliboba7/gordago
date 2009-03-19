@@ -124,9 +124,10 @@ namespace TestStrategy {
       
       /* * * * * * * * * * * * * Sell * * * * * * * * * * * */
       if(this.UseSellTrading) {
-        Vector close = Function(symbol, "Close", 900);
-        Vector ma13 = Function(symbol, "MA", 13, 1, close);
-        Vector ma34 = Function(symbol, "MA", 34, 1, close);
+
+        Vector close = (Vector)this.Function(symbol, "Close", 900);
+        Vector ma13 = (Vector)this.Function(symbol, "MA", 13, 1, close);
+        Vector ma34 = (Vector)this.Function(symbol, "MA", 34, 1, close);
 
         ITrade tradeSell = GetTrade(TradeType.Sell);
         if(tradeSell == null) {
@@ -144,9 +145,9 @@ namespace TestStrategy {
 
       /* * * * * * * * * * * * * Buy * * * * * * * * * * * */
       if(this.UseBuyTrading) {
-        Vector close = Function(symbol, "Close", 900);
-        Vector ma13 = Function(symbol, "MA", 13, 1, close);
-        Vector ma34 = Function(symbol, "MA", 34, 1, close);
+        Vector close = (Vector)this.Function(symbol, "Close", 900);
+        Vector ma13 = (Vector)Function(symbol, "MA", 13, 1, close);
+        Vector ma34 = (Vector)Function(symbol, "MA", 34, 1, close);
 
         ITrade tradeBuy = GetTrade(TradeType.Buy);
         if(tradeBuy == null) {
