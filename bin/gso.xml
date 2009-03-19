@@ -1,25 +1,25 @@
 <Gordago Version="1.1" State="True" X="-4" Y="-4" Width="800" Height="600">
   <DockManager>
     <ToolStripPanel Name="_tspRight" Items="_tsiExplorer" />
-    <ToolStrip Name="_tsiExplorer" X="0" Y="0" Width="168" Height="679" Visible="True" Items="" Row="0" />
+    <ToolStrip Name="_tsiExplorer" X="0" Y="0" Width="168" Height="420" Visible="True" Items="" Row="0" />
     <ToolStripPanel Name="_tspLeft" Items="_tsiSymbols" />
-    <ToolStrip Name="_tsiSymbols" X="0" Y="0" Width="155" Height="679" Visible="True" Items="" Row="0" />
+    <ToolStrip Name="_tsiSymbols" X="0" Y="0" Width="155" Height="420" Visible="True" Items="" Row="0" />
     <ToolStripPanel Name="_tspBottom" Items="_tsiTester,_tsiTerminal" />
-    <ToolStrip Name="_tsiTester" X="0" Y="0" Width="1280" Height="99" Visible="False" Items="" Row="0" />
-    <ToolStrip Name="_tsiTerminal" X="0" Y="0" Width="1280" Height="193" Visible="True" Items="" Row="1" />
+    <ToolStrip Name="_tsiTester" X="0" Y="0" Width="1152" Height="99" Visible="True" Items="" Row="0" />
+    <ToolStrip Name="_tsiTerminal" X="0" Y="99" Width="1152" Height="193" Visible="True" Items="" Row="1" />
     <ToolStripPanel Name="_tspTop" Items="_mainMenu,_tsStandart,_tsTimeFrame,_tsCharts,_tsChartObject,_tsVirtualServer" />
-    <ToolStrip Name="_mainMenu" X="0" Y="0" Width="1280" Height="24" Visible="True" Items=",,,,_mniFile,_mniView,_mniChart,_mniBroker,_mniService,_mniWindow,_mniHelp" Row="0" />
+    <ToolStrip Name="_mainMenu" X="0" Y="0" Width="1152" Height="24" Visible="True" Items=",,,,_mniFile,_mniView,_mniChart,_mniBroker,_mniService,_mniWindow,_mniHelp" Row="0" />
     <ToolStripItem Name="" X="6" Y="2" Width="20" Height="20" Visible="True" />
-    <ToolStripItem Name="" X="1260" Y="2" Width="20" Height="20" Visible="True" />
-    <ToolStripItem Name="" X="1240" Y="2" Width="20" Height="20" Visible="True" />
-    <ToolStripItem Name="" X="1220" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="" X="1132" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="" X="1112" Y="2" Width="20" Height="20" Visible="True" />
+    <ToolStripItem Name="" X="1092" Y="2" Width="20" Height="20" Visible="True" />
     <ToolStripItem Name="_mniFile" X="26" Y="2" Width="35" Height="20" Visible="True" />
     <ToolStripItem Name="_mniView" X="61" Y="2" Width="41" Height="20" Visible="True" />
-    <ToolStripItem Name="_mniChart" X="102" Y="2" Width="46" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniChart" X="102" Y="2" Width="46" Height="20" Visible="False" />
     <ToolStripItem Name="_mniBroker" X="128" Y="2" Width="50" Height="20" Visible="False" />
-    <ToolStripItem Name="_mniService" X="148" Y="2" Width="54" Height="20" Visible="True" />
-    <ToolStripItem Name="_mniWindow" X="202" Y="2" Width="57" Height="20" Visible="True" />
-    <ToolStripItem Name="_mniHelp" X="259" Y="2" Width="40" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniService" X="102" Y="2" Width="54" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniWindow" X="156" Y="2" Width="57" Height="20" Visible="True" />
+    <ToolStripItem Name="_mniHelp" X="213" Y="2" Width="40" Height="20" Visible="True" />
     <ToolStrip Name="_tsStandart" X="0" Y="24" Width="231" Height="25" Visible="True" Items="_mnbFileNew,_mnbFileOpen,_mnbFileSave,toolStripSeparator5,_mnbVSymbols,_mnbVTerminal,_mnbVControlPanel,_mnbVTools,toolStripSeparator16,_mnbConnect,_mnbDisconnect" Row="1" />
     <ToolStripItem Name="_mnbFileNew" X="9" Y="1" Width="23" Height="22" Visible="True" />
     <ToolStripItem Name="_mnbFileOpen" X="32" Y="1" Width="23" Height="22" Visible="True" />
@@ -74,7 +74,7 @@
     <ToolStripItem Name="_mnbVSPause" X="9" Y="1" Width="40" Height="22" Visible="True" />
     <ToolStripItem Name="_mnbVSSped" X="49" Y="1" Width="53" Height="22" Visible="True" />
   </DockManager>
-  <Chart State="max" Left="-4" Top="-30" Width="961" Height="687" Symbol="EURUSD" TF="3600" Pos="0" Zoom="3" BarType="0" Grid="True" PerSeps="False" ChartShift="True" AutoScroll="True">
+  <Chart State="normal" Left="-4" Top="-30" Width="961" Height="687" Symbol="EURUSD" TF="3600" Pos="449" Zoom="3" BarType="0" Grid="True" PerSeps="False" ChartShift="True" AutoScroll="True">
     <Box Percent="69.27">
       <Object Name="ChartObjectTrendLine_f9d84373e008" Type="Gordago.Analysis.Chart.ChartObjectTrendLine" Time0="1160139600" Price0="1.2721" Time1="1160463600" Price1="1.261023" BasisLineColor="-65536" BasisLineWidth="1" IsVector="True" />
       <Indicator Name="__indicator_Envelope598" Type="Gordago.StockOptimizer2.Toolbox.iEnvelope" Shift="0">
@@ -99,4 +99,5 @@
       </Indicator>
     </Box>
   </Chart>
+  <StrategyDLL State="max" Left="-4" Top="-30" Width="833" Height="428" File="C:\work\gordago_2_7\bin\strategy\dll\TestStrategy.dll" />
 </Gordago>

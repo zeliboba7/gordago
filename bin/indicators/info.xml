@@ -1,4 +1,4 @@
-<Indicators LoadTime="04.02.2009 13:51:02">
+<Indicators LoadTime="19.03.2009 9:55:40">
   <Indicator Name="Accelerator Oscillator" ShortName="AC" Image="i.gif">
     <Copyright>Copyright © 2006, Gordago Software Ltd., http://www.gordago.com/</Copyright>
     <Function Name="AC">
@@ -1304,23 +1304,6 @@
       </Parameter>
     </Function>
     <Function Name="switch" />
-    <Function Name="LowestIndex">
-      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
-        <Options Min="1" Max="100000" Step="1" Value="10" />
-      </Parameter>
-      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
-        <Options Value="Low" />
-      </Parameter>
-    </Function>
-    <Function Name="HighestIndex">
-      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
-        <Options Min="1" Max="100000" Step="1" Value="10" />
-      </Parameter>
-      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
-        <Options Value="High" />
-      </Parameter>
-    </Function>
-    <Function Name="__AroonHorn" />
     <Function Name="MSDI">
       <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
         <Options Value="Low" />
@@ -1357,8 +1340,7 @@
         <Options Min="1" Max="10000" Step="1" Value="13" />
       </Parameter>
     </Function>
-    <Function Name="DeMax" />
-    <Function Name="DeMin" />
+    <Function Name="__AroonHorn" />
     <Function Name="TR">
       <Parameter Name="VectorLow" Type="Vector" Visible="False" LangCapt="VectorLow">
         <Options Value="Low" />
@@ -1367,6 +1349,20 @@
         <Options Value="High" />
       </Parameter>
       <Parameter Name="VectorClose" Type="Vector" Visible="False" LangCapt="VectorClose">
+        <Options Value="Close" />
+      </Parameter>
+    </Function>
+    <Function Name="DeMax" />
+    <Function Name="DeMin" />
+    <Function Name="RawFI" />
+    <Function Name="Juice">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period">
+        <Options Min="1" Max="10000" Step="1" Value="7" />
+      </Parameter>
+      <Parameter Name="Level" Type="Integer" Visible="True" LangCapt="Level (point)">
+        <Options Min="0" Max="100" Step="1" Value="4" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
         <Options Value="Close" />
       </Parameter>
     </Function>
@@ -1381,16 +1377,20 @@
         <Options Value="Close" />
       </Parameter>
     </Function>
-    <Function Name="RawFI" />
-    <Function Name="Juice">
-      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period">
-        <Options Min="1" Max="10000" Step="1" Value="7" />
-      </Parameter>
-      <Parameter Name="Level" Type="Integer" Visible="True" LangCapt="Level (point)">
-        <Options Min="0" Max="100" Step="1" Value="4" />
+    <Function Name="LowestIndex">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="100000" Step="1" Value="10" />
       </Parameter>
       <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
-        <Options Value="Close" />
+        <Options Value="Low" />
+      </Parameter>
+    </Function>
+    <Function Name="HighestIndex">
+      <Parameter Name="Period" Type="Integer" Visible="True" LangCapt="Period, Период">
+        <Options Min="1" Max="100000" Step="1" Value="10" />
+      </Parameter>
+      <Parameter Name="__ApplyTo" Type="Vector" Visible="True" LangCapt="Apply to, Применить к">
+        <Options Value="High" />
       </Parameter>
     </Function>
   </FreeFunction>

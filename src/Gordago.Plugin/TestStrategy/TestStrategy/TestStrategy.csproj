@@ -33,10 +33,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="trader, Version=1.1.2470.29473, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="trader">
+      <HintPath>..\..\..\..\bin\trader.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Gordago\Forex Optimizer TT\trader.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
