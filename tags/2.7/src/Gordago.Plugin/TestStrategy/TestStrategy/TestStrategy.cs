@@ -108,13 +108,20 @@ namespace TestStrategy {
       set { this._buyTrailPoint = value; }
     }
     #endregion
+    
+    private float Shift(IVector vector, int shift){
+    	int count = vector.Count;
+    	if (count - 1 - shift < 0)
+    		return float.NaN;
+      return vector[count - 1 - shift];
+    }
 
     /// <summary>
     /// OnLoad the method at start of strategy
     /// </summary>
     /// <returns>true if the strategy can be starting</returns>
     public override bool OnLoad() {return true;}
-
+    
     public override void OnOnlineRateChanged(IOnlineRate onlineRate) {
       if (onlineRate.Symbol.Name != _symbolName)
         return;
@@ -125,14 +132,14 @@ namespace TestStrategy {
       /* * * * * * * * * * * * * Sell * * * * * * * * * * * */
       if(this.UseSellTrading) {
 
-        Vector close = (Vector)this.Function(symbol, "Close", 900);
-        Vector ma13 = (Vector)this.Function(symbol, "MA", 13, 1, close);
-        Vector ma34 = (Vector)this.Function(symbol, "MA", 34, 1, close);
+        IVector close = this.Function(symbol, "Close", 900);
+        IVector ma13 = this.Function(symbol, "MA", 13, 1, close);
+        IVector ma34 = this.Function(symbol, "MA", 34, 1, close);
 
         ITrade tradeSell = GetTrade(TradeType.Sell);
         if(tradeSell == null) {
 
-          if(ma13.Shift(0) > ma34.Shift(0) && ma13.Shift(1) <= ma34.Shift(1)) {
+           if(ma13.Current > ma34.Current && this.Shift(ma13, 1) <= this.Shift(ma34, 1)) {
             float stopRate = this.SellUseStop ? onlineRate.BuyRate + symbol.Point * this.SellStopPoint : 0;
             float limitRate = this.SellUseLimit ? onlineRate.BuyRate - symbol.Point * this.SellLimitPoint : 0;
 
@@ -145,20 +152,21 @@ namespace TestStrategy {
 
       /* * * * * * * * * * * * * Buy * * * * * * * * * * * */
       if(this.UseBuyTrading) {
-        Vector close = (Vector)this.Function(symbol, "Close", 900);
-        Vector ma13 = (Vector)Function(symbol, "MA", 13, 1, close);
-        Vector ma34 = (Vector)Function(symbol, "MA", 34, 1, close);
+        IVector close = this.Function(symbol, "Close", 900);
+        IVector ma13 = this.Function(symbol, "MA", 13, 1, close);
+        IVector ma34 = this.Function(symbol, "MA", 34, 1, close);
 
         ITrade tradeBuy = GetTrade(TradeType.Buy);
+        
         if(tradeBuy == null) {
-
-          if(ma13.Shift(0) > ma34.Shift(0) && ma13.Shift(1) <= ma34.Shift(1)) {
+        	
+        	if(ma13.Current > ma34.Current && this.Shift(ma13, 1) <= this.Shift(ma34, 1)) {
             float stopRate = this.BuyUseStop ? onlineRate.SellRate - symbol.Point * this.BuyStopPoint : 0;
             float limitRate = this.BuyUseLimit ? onlineRate.SellRate + symbol.Point * this.BuyLimitPoint : 0;
             this.Trader.TradeOpen(account.AccountId, symbol.Name, TradeType.Buy, 1, 0, stopRate, limitRate);
           }
         } else {
-          if(ma13.Shift(0) < ma34.Shift(0) && ma13.Shift(1) >= ma34.Shift(1)) {
+          if(ma13.Current < ma34.Current && this.Shift(ma13, 1) >= this.Shift(ma34, 1)) {
             this.Trader.TradeClose(tradeBuy.TradeId, tradeBuy.Lots, 0);
           } else {
             CheckTrail(tradeBuy);
